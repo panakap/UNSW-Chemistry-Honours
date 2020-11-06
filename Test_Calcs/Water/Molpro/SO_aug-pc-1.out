@@ -1,0 +1,482 @@
+
+ Primary working directories    : /jobfs/8424145.gadi-pbs/molpro.PliKMY5YVo
+ Secondary working directories  : /jobfs/8424145.gadi-pbs/molpro.PliKMY5YVo
+ Wavefunction directory         : /home/561/pk8622/wfu/
+ Main file repository           : /jobfs/8424145.gadi-pbs/molpro.PliKMY5YVo/
+
+ id        : anu
+
+ Nodes                            nprocs
+ gadi-cpu-clx-0975.gadi.nci.org.au    1
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (934), CPU time= 0.01 sec
+ ***,H2O HARMONIC FREQUENCIES
+ 
+ memory,m,40
+ basis={
+                                                                                 !
+                                                                                 ! hydrogen             (5s,2p) -&gt; [3s,2p]
+ s, H , 0.122520E+02, 0.186870E+01, 0.418210E+00, 0.106100E+00, 0.256280E-01
+ c, 1.3, 0.228220E-01, 0.155640E+00, 0.488980E+00
+ c, 4.4, 0.100000E+01
+ c, 5.5, 0.100000E+01
+ p, H , 0.100000E+01, 0.768840E-01
+ c, 1.1, 0.100000E+01
+ c, 2.2, 0.100000E+01
+                                                                                 !
+                                                                                 ! oxygen               (8s,5p,2d) -&gt; [4s,3p,2d]
+ s, O , 0.230670E+04, 0.347150E+03, 0.788900E+02, 0.218760E+02, 0.666460E+01, 0.106690E+01, 0.307000E+00, 0.834250E-01
+ c, 1.5, 0.539400E-02, 0.402480E-01, 0.179210E+00, 0.459780E+00, 0.452340E+00
+ c, 2.6, -0.316920E-03, -0.259440E-02, -0.362410E-01, -0.877900E-01, 0.533200E+00
+ c, 7.7, 0.100000E+01
+ c, 8.8, 0.100000E+01
+ p, O , 0.170220E+02, 0.368380E+01, 0.992340E+00, 0.244870E+00, 0.576160E-01
+ c, 1.3, 0.489190E-01, 0.249620E+00, 0.513470E+00
+ c, 4.4, 0.100000E+01
+ c, 5.5, 0.100000E+01
+ d, O , 0.100000E+01, 0.172850E+00
+ c, 1.1, 0.100000E+01
+ c, 2.2, 0.100000E+01
+ }
+ 
+ orient,mass
+ geometry={
+ O
+ H, 1, 0.96900
+ H, 1, 0.96900, 2, 103.97800
+ }
+ 
+ mass,iso
+ 
+ {ks,XC-SOGGA11-X
+  GRID,[status=new],name=PRUNED,threshold_overall=1e-12,min_nr=[0,0,0,0],max_nr=[20,25,25,30],min_l=[0,0,0,0],max_l=[41,41,41,41],voronoi_scheme=BECKE}
+ 
+ optg,GRADIENT=0.000002,STEP=0.000006,ENERGY=0.00000001,GRMS=0.000001,SRMS=0.000004,FREEZE=0.000006
+ 
+ frequencies,symm=auto
+ Commands  initialized (763), CPU time= 0.01 sec, 617 directives.
+ Default parameters read. Elapsed time= 0.09 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2019.2 linked Nov 21 2019 12:21:21
+
+
+ **********************************************************************************************************************************
+ LABEL *   H2O HARMONIC FREQUENCIES                                                      
+  64 bit serial version                                                                  DATE: 13-Jul-20          TIME: 11:27:33  
+ **********************************************************************************************************************************
+
+ SHA1:             8dbd9ae1082e4ce945b0f27595c9eb2d4aa09004
+ **********************************************************************************************************************************
+
+ Variable memory set to    8000000 words,  buffer space 
+
+ SETTING BASIS          =    USERDEF
+ ZCENTRE=MASS
+ 
+
+
+ Using masses of most abundant isotopes
+
+ **********************************************************************************************************************************
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Asymmetric top,     Order of principal axis = 2
+ Symmetry elements: X,Y
+ Rotational constants:     995.8334001   2831.3940003   1536.0956833 GHz
+
+ Point group  C2v 
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  O       8.00    0.000000000    0.000000000   -0.066782144
+   2  H       1.00    0.000000000    0.763467872    0.529940411
+   3  H       1.00    0.000000000   -0.763467872    0.529940411
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  0.969000000  1-3  0.969000000  2-3  1.526935744
+     ( 0.512772717)     ( 0.512772717)     ( 0.808019598)
+
+ Bond angles
+
+  1-2-3   38.01100000   1-3-2   38.01100000   2-1-3  103.97800000
+
+ NUCLEAR CHARGE:                   10
+ NUMBER OF PRIMITIVE AOS:          57
+ NUMBER OF SYMMETRY AOS:           55
+ NUMBER OF CONTRACTIONS:           41   (   18A1  +    7B1  +   12B2  +    4A2  )
+ NUMBER OF CORE ORBITALS:           1   (    1A1  +    0B1  +    0B2  +    0A2  )
+ NUMBER OF VALENCE ORBITALS:        6   (    3A1  +    1B1  +    2B2  +    0A2  )
+
+
+ NUCLEAR REPULSION ENERGY   17.16677431
+
+ Eigenvalues of metric
+
+         1 0.133E-02 0.657E-02 0.198E-01 0.412E-01 0.490E-01 0.905E-01 0.222E+00 0.368E+00
+         2 0.208E-01 0.143E+00 0.355E+00 0.723E+00 0.128E+01 0.199E+01 0.371E+01
+         3 0.505E-03 0.223E-02 0.116E-01 0.218E-01 0.422E-01 0.138E+00 0.248E+00 0.509E+00
+         4 0.356E-01 0.150E+00 0.818E+00 0.177E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     1.049 MB (compressed) written to integral file ( 62.4%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:     105632.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:     105632      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.66 MW
+
+ SORT1 READ      171497. AND WROTE       97491. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.01 SEC
+ SORT2 READ       97491. AND WROTE      105632. INTEGRALS IN      4 RECORDS. CPU TIME:     0.02 SEC, REAL TIME:     0.01 SEC
+
+ FILE SIZES:   FILE 1:    31.0 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:     35.3 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       30.50       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.64      0.19
+ REAL TIME  *         0.80 SEC
+ DISK USED  *        35.55 MB
+ **********************************************************************************************************************************
+
+ Functional: XC-SOGGA11-X(via MFM 1.6)                                         Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+ 
+ Functional: XC-SOGGA11-X              Factor:  1.0000
+ 
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 4263 points in CPU time    0.1
+ Computed new grid on record 1800.1 in CPU time    0.1
+   36143 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       5+    5-
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+ Orbital guess generated from atomic densities. Full valence occupancy:    4   1   2   0
+
+ Molecular orbital dump at record        2100.2
+
+ Initial occupancy:   3   1   1   0
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   ORB.
+    1      0.000D+00      0.000D+00       -71.01401250    106.733790    0.00000    0.00000    0.67177    0    start
+    2      0.000D+00      0.553D-01       -70.37016713     83.830912    0.00000    0.00000    1.19250    1    diag
+    3      0.103D+00      0.124D+00       -71.14438369    101.299853    0.00000    0.00000    0.66208    2    diag
+    4      0.922D-01      0.791D-02       -71.14809978    100.166508    0.00000    0.00000    0.65132    3    diag
+    5      0.112D-01      0.197D-02       -71.14823740    100.238707    0.00000    0.00000    0.66301    4    diag
+    6      0.231D-02      0.511D-03       -71.14825066    100.301600    0.00000    0.00000    0.65914    5    diag
+    7      0.389D-03      0.315D-04       -71.14825073    100.301457    0.00000    0.00000    0.65997    6    diag
+    8      0.958D-04      0.556D-05       -71.14825073    100.302135    0.00000    0.00000    0.65994    7    diag
+    9      0.188D-04      0.175D-06       -71.14825073    100.302148    0.00000    0.00000    0.65994    8    diag
+   10      0.964D-06      0.199D-07       -71.14825073    100.302155    0.00000    0.00000    0.65994    0    orth
+
+ Final occupancy:   3   1   1   0
+
+ !RKS STATE  1.1 Energy               -71.148250732625
+ Nuclear energy                        17.16677431
+ One-electron energy                 -132.50646112
+ Two-electron energy                   50.15107731
+ Density functional                    -5.95964124     XC-SOGGA11-X=-5.95964124
+ Virial quotient                       -0.90858491
+ !RKS STATE  1.1 Dipole moment          0.00000000     0.00000000     0.65994360
+ Dipole moment /Debye                   0.00000000     0.00000000     1.67729945
+
+ Orbital energies:
+
+         1.1          2.1          3.1          4.1          5.1
+    -17.879841    -1.043788    -0.252468    -0.009497     0.072524
+
+         1.2          2.2          3.2
+     -0.188594     0.084754     0.254231
+
+         1.3          2.3          3.3
+     -0.533602     0.020730     0.132997
+
+         1.4          2.4
+      0.179350     0.582314
+
+
+ HOMO      1.2    -0.188594 =      -5.1319eV
+ LUMO      4.1    -0.009497 =      -0.2584eV
+ LUMO-HOMO         0.179098 =       4.8735eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       30.64       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       5        2.77       700     1000      520     1800     2100   
+                                         GEOM     BASIS   MCVARS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL    KS-SCF       INT
+ CPU TIMES  *         1.38      0.74      0.19
+ REAL TIME  *         1.60 SEC
+ DISK USED  *        35.55 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * OPT (Geometry optimization)     Authors: F. Eckert and H.-J. Werner
+
+
+ BFGS update of hessian
+
+ *** Long output written to logfile /scratch/on41/pk8622/Test_Calcs/Water/New/Molpro/SO_aug-pc-1.log ***
+
+
+ Geometry optimization using default procedure for command KS-SCF
+
+ Geometry written to block  1 of record 701
+
+ Making model hessian for cartesian coordinates
+
+ Entering Rational Function Geometry Optimization
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS   CPU-time
+   1   -71.14825073   -72.27715905    -1.12890832  4.77343869  6.07257189  2.02419063  0.27761702  0.30000000  0.17320508      1.19
+   2   -72.27715905   -72.59055159    -0.31339253  1.95026923  2.35853831  0.78617944  0.14110640  0.17589588  0.10155353      2.38
+   3   -72.59055159   -72.77893860    -0.18838701  1.20259785  1.30104867  0.43368289  0.20181303  0.20943226  0.12091577      3.60
+   4   -72.77893860   -72.84821454    -0.06927595  0.56321698  0.58916298  0.19638766  0.15735126  0.16743940  0.09667118      4.78
+   5   -72.84821454   -72.88110748    -0.03289294  0.25635238  0.27397058  0.09132353  0.18879102  0.21814549  0.12594636      6.00
+   6   -72.88110748   -72.89444886    -0.01334138  0.10261360  0.11411490  0.03803830  0.27334233  0.28238547  0.16303533      7.17
+   7   -72.89444886   -72.89571517    -0.00126632  0.02961032  0.03162508  0.01054169  0.09675968  0.10319080  0.05957724      8.31
+   8   -72.89571517   -72.89572878    -0.00001360  0.00778860  0.00779073  0.00259691  0.01239564  0.01243869  0.00718148      9.39
+   9   -72.89572878   -72.89571512     0.00001366  0.00149942  0.00152440  0.00050813  0.00294501  0.00374049  0.00215958     10.53
+  10   -72.89571512   -72.89571476     0.00000036  0.00003607  0.00003645  0.00001215  0.00007268  0.00008554  0.00004939     11.58
+ Freezing grid
+  11   -72.89571476   -72.89571476     0.00000000  0.00000015  0.00000016  0.00000005  0.00000139  0.00000140  0.00000081     12.41
+
+ END OF GEOMETRY OPTIMIZATION.
+
+ Current geometry (xyz format, in Angstrom)
+
+    3
+ KS-SCF000/USERDEF  ENERGY=-72.89571476
+ O          0.0000000000        0.0000000000       -0.3000175852
+ H          0.0000000000        0.8376078475        0.4127713870
+ H          0.0000000000       -0.8376078475        0.4127713870
+
+ **********************************************************************************************************************************
+
+ Geometry written to block  1 of record 701
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      21       30.82       500      610      700      900      701      950      970     1000      129      960   
+                                          VAR    BASINP    GEOM    SYMINP    GEOM     ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800   
+                                         GRID   
+
+              2       6        2.82       700     1000      520     1800     2100      701   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM   
+
+ PROGRAMS   *        TOTAL      OPTG    KS-SCF       INT
+ CPU TIMES  *        13.84     12.41      0.74      0.19
+ REAL TIME  *        15.17 SEC
+ DISK USED  *        38.35 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * HESSIAN
+
+ Computing numerical hessian using default procedure for command KS-SCF
+
+ Symmetry elements for unique displacements: X  Y  
+
+ Using AUTO symmetry option
+
+ Running default procedure: KS-SCF000
+ 
+
+ Recomputing wavefunction at reference geometry
+
+ Numerically approximating hessian using central gradient differences
+
+ Task list generated. Total number of displacements:      9
+
+    5 tasks completed, CPU=10s Elapsed=10s
+
+ Numerical KS-SCF000 hessian completed. CPU-time:    20.03 sec, Elapsed:    20.68 sec
+
+ KS-SCF hessian saved to record  5300.2
+
+ PROGRAM * FREQUENCIES (Calculation of harmonic vibrational spectra for KS-SCF)
+
+
+ Permanent Dipole Moment [debye]
+   1-  3    0.000000    0.000000    1.695051
+
+ Dipole Moment Norm    1.6950509 [debye]
+
+ Dipole Moment Derivatives [debye/ang]
+                   1             2             3             4             5             6             7             8
+         1    -2.3769467     0.0000000     0.0000000     1.1884803     0.0000000     0.0000000     1.1884803     0.0000000
+         2     0.0000000    -1.5946871     0.0000000     0.0000000     0.7973764    -0.3332954     0.0000000     0.7973764
+         3     0.0000000     0.0000000    -1.0837465     0.0000000    -0.5169722     0.5417524     0.0000000     0.5169722
+                   9
+         1     0.0000000
+         2     0.3332954
+         3     0.5417524
+
+ Projecting out rotations and translations
+
+   Low Vibration      Wavenumber
+        Nr             [1/cm] 
+        1                0.00
+        2                0.00
+        3                0.00
+        4                0.00
+        5                0.00
+        6                0.00
+
+     Vibration        Wavenumber
+        Nr             [1/cm] 
+        1             1357.33
+        2             2735.75
+        3             2819.47
+
+ FREQUENCIES * CALCULATION OF NORMAL MODES FOR KS-SCF
+
+
+ Atomic Coordinates
+
+  Nr  Atom  Charge       X              Y              Z
+
+   1   O     8.00    0.000000000    0.000000000   -0.150746676
+   2   H     1.00    0.000000000    1.582849432    1.196229266
+   3   H     1.00    0.000000000   -1.582849432    1.196229266
+
+ Gradient norm at reference geometry: 0.29621D-02
+
+ ?WARNING: GRADIENT NORM NOT ZERO!
+
+ Normal Modes
+
+                              1 A1        2 A1        3 B2 
+ Wavenumbers [cm-1]         1357.33     2735.75     2819.47
+ Intensities [km/mol]         49.74        0.39       17.10
+ Intensities [relative]      100.00        0.78       34.38
+           OX1              0.00000     0.00000     0.00000
+           OY1             -0.00000     0.00000    -0.06526
+           OZ1             -0.06689    -0.05023    -0.00000
+           HX2             -0.00000    -0.00000     0.00000
+           HY2             -0.42298     0.56321     0.51783
+           HZ2              0.53076     0.39861     0.44066
+           HX3             -0.00000    -0.00000     0.00000
+           HY3              0.42298    -0.56321     0.51783
+           HZ3              0.53076     0.39861    -0.44066
+
+
+ Normal Modes of low/zero frequencies
+
+                                  1           2           3           4           5
+ Wavenumbers [cm-1]            0.00        0.00        0.00        0.00        0.00
+ Intensities [km/mol]          0.00        0.00        0.00        0.00        0.00
+ Intensities [relative]        0.00        0.00        0.00        0.00        0.00
+           OX1              0.00000     0.00000     0.25004     0.00000     0.00000
+           OY1              0.22721     0.01497     0.00000     0.00000    -0.05670
+           OZ1              0.07741    -0.02116     0.00000    -0.00000     0.11695
+           HX2             -0.04327     0.96818     0.00000    -0.00000    -0.11603
+           HY2              0.10255    -0.08639     0.00000     0.00000    -0.41067
+           HZ2              0.22390     0.09794     0.00000    -0.00000     0.53291
+           HX3             -0.00000     0.00000     0.00000     0.99611     0.00000
+           HY3              0.10255    -0.08639     0.00000     0.00000    -0.41067
+           HZ3             -0.06909    -0.14027     0.00000     0.00000    -0.29901
+
+                                  6
+ Wavenumbers [cm-1]            0.00
+ Intensities [km/mol]          0.00
+ Intensities [relative]        0.00
+           OX1              0.00000
+           OY1             -0.05655
+           OZ1              0.18816
+           HX2              0.19881
+           HY2              0.20334
+           HZ2             -0.11723
+           HX3             -0.00000
+           HY3              0.20334
+           HZ3              0.49356
+
+
+ Frequencies dumped to record   5400.2
+
+ Zero point energy:  0.01574797 [H]     3456.28 [1/CM]       41.35 [KJ/MOL]
+
+ Recomputing wavefunction at initial geometry
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       31.18       500      610      701      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2      10        3.01       700     1000      520     1800     2100      701     1800(1)  5300     5450     5400   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM     GRID     HESS     NMOD     FREQ   
+
+ PROGRAMS   *        TOTAL      FREQ    KS-SCF    KS-SCF    KS-SCF    KS-SCF    KS-SCF    KS-SCF    KS-SCF    KS-SCF    KS-SCF
+ CPU TIMES  *        34.31      0.54      1.42      1.40      1.41      1.41      0.76      1.26      1.27      1.38      1.24
+ REAL TIME  *        37.29 SEC
+ DISK USED  *        40.36 MB
+ **********************************************************************************************************************************
+
+ XC-SOGGA11-X/USERDEF energy=    -72.895714761018
+
+          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF
+    -72.89571476    -72.89572558    -72.89569146    -72.89570543    -72.89570547    -72.89571472    -72.89566753    -72.89573575
+ **********************************************************************************************************************************
+ Molpro calculation terminated

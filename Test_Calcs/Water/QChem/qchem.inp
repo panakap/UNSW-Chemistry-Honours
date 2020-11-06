@@ -1,0 +1,34 @@
+$comment
+	QCHEM - Water
+	Geometry optimization
+	Harmonic frequency analysis
+$end
+
+$molecule
+0 1
+  O1
+  H2 O1 r2
+  H3 O1 r3 H2 a3
+
+   r2 =         0.96900
+   r3 =         0.96900
+   a3 =       103.97800
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+$end

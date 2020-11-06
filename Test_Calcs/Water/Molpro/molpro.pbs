@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -P on41
+#PBS -q normal
+#PBS -l walltime=1:00:00
+#PBS -l mem=4GB
+#PBS -l jobfs=4GB
+#PBS -l ncpus=1
+#PBS -l software=molpro
+#PBS -l wd
+#PBS -M p.kapodistrias@unsw.edu.au
+
+module load molpro
+
+molpro -o HF_aug-pc-1.out HF_aug-pc-1.inp
+molpro -o SO_aug-pc-1.out SO_aug-pc-1.inp
+molpro -o SO_pc-2.out SO_pc-2.inp

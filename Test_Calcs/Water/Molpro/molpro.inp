@@ -1,0 +1,22 @@
+***,	Geometry optimization + Harmonic vibrational analysis for H2O
+
+memory,40,m
+basis=STO-3G
+
+symmetry,nosym
+orient,planexz
+angstrom
+
+geometry={
+O
+H, 1, 0.96900
+H, 1, 0.96900, 2, 103.97800
+}
+mass,iso
+
+hf
+optg
+
+hf
+frequencies
+---

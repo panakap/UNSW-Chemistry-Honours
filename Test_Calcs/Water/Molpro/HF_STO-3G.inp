@@ -1,0 +1,22 @@
+***, H2O HARMONIC FREQUENCIES
+
+memory,m,40
+basis=STO-3G
+
+symmetry,nosym
+orient,planexz
+angstrom
+
+geometry={
+O
+H, 1, 0.96900
+H, 1, 0.96900, 2, 103.97800
+}
+
+mass,iso
+
+hf
+optg,GRADIENT=0.000002,STEP=0.000006,ENERGY=0.000000001,GRMS=0.000001,SRMS=0.000004
+
+frequencies,symm=auto
+---

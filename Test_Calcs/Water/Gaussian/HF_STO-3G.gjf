@@ -1,0 +1,14 @@
+# HF/STO-3G Freq Opt=(VeryTight,Z-Matrix,CalcAll) Int=UltraFine
+
+H2O HARMONIC FREQUENCIES
+
+0 1
+  O1
+  H2 O1 r2
+  H3 O1 r3 H2 a3
+
+   r2 =         0.96900
+   r3 =         0.96900
+   a3 =       103.97800
+
+

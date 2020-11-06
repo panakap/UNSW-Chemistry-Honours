@@ -1,0 +1,44 @@
+$comment
+	QCHEM - Water
+	Geometry optimization
+	Harmonic frequency analysis
+$end
+
+$molecule
+0 1
+  O1
+  H2 O1 r2
+  H3 O1 r3 H2 a3
+
+   r2 =         0.96900
+   r3 =         0.96900
+   a3 =       103.97800
+$end
+
+$rem
+	JOBTYPE				OPT
+	SCF_CONVERGENCE			7
+	THRESH				10
+	METHOD				HF
+	BASIS				STO-3G
+	GEOM_OPT_TOL_GRADIENT		2
+	GEOM_OPT_TOL_DISPLACEMENT	6
+	XC_GRID				3
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE				FREQ
+        SCF_CONVERGENCE                 7
+        THRESH                          10
+        METHOD                          HF
+        BASIS                           STO-3G
+        GEOM_OPT_TOL_GRADIENT           2
+        GEOM_OPT_TOL_DISPLACEMENT       6
+        XC_GRID                         3
+$end
