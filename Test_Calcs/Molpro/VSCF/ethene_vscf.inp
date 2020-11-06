@@ -1,0 +1,35 @@
+***,    Geom opt + VSCF for ethene
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+6
+
+C         -0.60396        1.82801        0.00000
+C          0.73176        1.84069        0.00000
+H         -1.17088        2.56631        0.55840
+H         -1.15677        1.07908       -0.55840
+H          1.28457        2.58962        0.55840
+H          1.29868        1.10239       -0.55840
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+{surf,start1D=label1,sym=auto
+ intensity,dipole=2}
+
+poly
+vscf,combi=1,pot=poly
+---
+

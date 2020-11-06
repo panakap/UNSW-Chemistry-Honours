@@ -1,0 +1,37 @@
+***,    Geom opt + VSCF for 1,2-difluoroethane
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+8
+
+C         -0.61487        1.08139       -0.01148
+C          0.89653        1.04038       -0.05036
+H         -0.97661        1.49777        0.93220
+F         -1.10472       -0.18417       -0.12125
+H         -1.01366        1.66195       -0.84739
+F          1.36506        0.51827        1.11648
+H          1.31422        2.04539       -0.15201
+H          1.25568        0.40777       -0.86617
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+{surf,start1D=label1,sym=auto
+ intensity,dipole=2}
+
+poly
+vscf,combi=1,pot=poly
+---
+

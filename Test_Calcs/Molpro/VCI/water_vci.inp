@@ -1,0 +1,30 @@
+***,	MOLRPO Geometry optimization + VCI calculation for water
+
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+3
+
+O	 -0.23995	1.15171		-0.00379
+H	 0.72794	1.19730		0.00502
+H	-0.51880	2.06288		0.17219
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+ks,M06
+
+{surf,start1D=label1,sym=auto
+ intensity,dipole=2}
+
+vscf,combi=1
+vci,combi=1,vam=3
+---
+

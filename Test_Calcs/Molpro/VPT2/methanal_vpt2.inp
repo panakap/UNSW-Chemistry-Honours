@@ -1,0 +1,31 @@
+***,    Geom opt + VPT2 for methanal
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+4
+
+C         -0.09593        1.46711       -0.00063
+O         -0.50414        2.58940        0.27058
+H         -0.54473        0.85573       -0.79970
+H          0.74465        1.00141        0.53817
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+surf,start1D=label1,type=qff,sym=auto
+poly,type=qff
+vpt2,combi=1
+---
+

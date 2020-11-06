@@ -1,0 +1,32 @@
+***,    Geom opt + VPT2 for silane
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+5
+
+Si         0.00646        1.04427       -0.00000
+H          1.49146        1.04427        0.00000
+H         -0.48854        0.03020       -0.96533
+H         -0.48854        2.38730       -0.39554
+H         -0.48854        0.71530        1.36087
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+surf,start1D=label1,type=qff,sym=auto
+poly,type=qff
+vpt2,combi=1
+---
+

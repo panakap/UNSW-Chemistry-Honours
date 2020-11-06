@@ -1,0 +1,1460 @@
+
+ Primary working directories    : /jobfs/7633244.gadi-pbs/molpro.yYhkVIQc4N
+ Secondary working directories  : /jobfs/7633244.gadi-pbs/molpro.yYhkVIQc4N
+ Wavefunction directory         : /home/561/pk8622/wfu/
+ Main file repository           : /jobfs/7633244.gadi-pbs/molpro.yYhkVIQc4N/
+
+ id        : anu
+
+ Nodes                            nprocs
+ gadi-cpu-clx-1999.gadi.nci.org.au    4
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (934), CPU time= 0.00 sec
+ ***,Geom opt + VPT2 for ethene
+ 
+ memory,40,m
+ basis=def2-TZVP
+ 
+ orient,mass
+ geomtyp=xyz
+ geometry={
+ 6
+ C         -0.60396        1.82801        0.00000
+ C          0.73176        1.84069        0.00000
+ H         -1.17088        2.56631        0.55840
+ H         -1.15677        1.07908       -0.55840
+ H          1.28457        2.58962        0.55840
+ H          1.29868        1.10239       -0.55840
+ }
+ mass,iso
+ 
+ ks,M06
+ optg
+ 
+ frequencies,symm=auto
+ 
+ label1
+ {ks,M06
+ start,atden}
+ 
+ surf,start1D=label1,type=qff,sym=auto
+ poly,type=qff
+ vpt2,combi=1
+ Commands  initialized (763), CPU time= 0.01 sec, 617 directives.
+ Default parameters read. Elapsed time= 0.10 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2019.2 linked Nov 21 2019 12:21:21
+
+
+ **********************************************************************************************************************************
+ LABEL *   Geom opt + VPT2 for ethene                                                    
+  64 bit mppx version                                                                    DATE: 23-Jun-20          TIME: 16:26:48  
+ **********************************************************************************************************************************
+
+ SHA1:             8dbd9ae1082e4ce945b0f27595c9eb2d4aa09004
+ **********************************************************************************************************************************
+
+ Variable memory set to   40000000 words,  buffer space 
+
+ SETTING BASIS          =    DEF2-TZVP
+ SETTING GEOMTYP        =    XYZ
+ ZCENTRE=MASS
+ 
+
+
+ Using masses of most abundant isotopes
+
+ **********************************************************************************************************************************
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry C      S def2-TZVP            selected for orbital group  1
+ Library entry C      P def2-TZVP            selected for orbital group  1
+ Library entry C      D def2-TZVP            selected for orbital group  1
+ Library entry C      F def2-TZVP            selected for orbital group  1
+ Library entry H      S def2-TZVP            selected for orbital group  2
+ Library entry H      P def2-TZVP            selected for orbital group  2
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Asymmetric top,     Order of principal axis = 2
+ Symmetry elements: X,YZ
+ Rotational constants:      24.9333757    144.9587841     30.1128892 GHz
+
+ Point group  C2h 
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  C       6.00    0.000000000   -1.262129355    0.000001548
+   2  C       6.00    0.000000000    1.262129355   -0.000001548
+   3  H       1.00    0.000000000   -2.320158562    1.757370222
+   4  H       1.00    0.000000000    2.320158562   -1.757370222
+   5  H       1.00    0.000000000   -2.320178531   -1.757365126
+   6  H       1.00    0.000000000    2.320178531    1.757365126
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.524258711  1-3  2.051285075  1-5  2.051293662  2-4  2.051285075  2-6  2.051293662
+     ( 1.335780184)     ( 1.085493315)     ( 1.085497859)     ( 1.085493315)     ( 1.085497859)
+
+ Bond angles
+
+  1-2-4  121.05024281   1-2-6  121.05060887   2-1-3  121.05024281   2-1-5  121.05060887
+
+  3-1-5  117.89914832   4-2-6  117.89914832
+
+ NUCLEAR CHARGE:                   16
+ NUMBER OF PRIMITIVE AOS:         134
+ NUMBER OF SYMMETRY AOS:          124
+ NUMBER OF CONTRACTIONS:           86   (   31Ag  +   12Au  +   31Bu  +   12Bg  )
+ NUMBER OF CORE ORBITALS:           2   (    1Ag  +    0Au  +    1Bu  +    0Bg  )
+ NUMBER OF VALENCE ORBITALS:       12   (    5Ag  +    1Au  +    5Bu  +    1Bg  )
+
+
+ NUCLEAR REPULSION ENERGY   33.32001007
+
+ Eigenvalues of metric
+
+         1 0.206E-02 0.483E-02 0.746E-02 0.166E-01 0.179E-01 0.297E-01 0.671E-01 0.110E+00
+         2 0.159E+00 0.179E+00 0.358E+00 0.406E+00 0.505E+00 0.770E+00 0.845E+00 0.117E+01
+         3 0.233E-03 0.995E-03 0.377E-02 0.639E-02 0.168E-01 0.233E-01 0.630E-01 0.100E+00
+         4 0.292E-01 0.938E-01 0.302E+00 0.307E+00 0.375E+00 0.576E+00 0.602E+00 0.111E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     12.059 MB (compressed) written to integral file ( 54.3%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:    1888382.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:    1888382      RECORD LENGTH: 524288
+
+ Memory used in sort:       2.45 MW
+
+ SORT1 READ     2741888. AND WROTE     1887184. INTEGRALS IN      6 RECORDS. CPU TIME:     0.10 SEC, REAL TIME:     0.11 SEC
+ SORT2 READ     1887184. AND WROTE     1888382. INTEGRALS IN     46 RECORDS. CPU TIME:     0.11 SEC, REAL TIME:     0.12 SEC
+
+ FILE SIZES:   FILE 1:    42.3 MBYTE,  FILE 4:    25.2 MBYTE,   TOTAL:     67.5 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       38.63       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         2.65      2.00
+ REAL TIME  *         2.95 SEC
+ DISK USED  *        67.86 MB
+ **********************************************************************************************************************************
+
+ Density functional group M06=XC-M06
+ Functional: XC-M06(via MFM 1.6)                                               Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+ 
+
+ Exact exchange will be calculated, factor:  0.2700
+
+ Functional: XC-M06                    Factor:  1.0000
+ 
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 6686 points in CPU time    0.1
+ Computed new grid on record 1800.1 in CPU time    0.2
+   72253 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       8+    8-
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+ Orbital guess generated from atomic densities. Full valence occupancy:    6   1   6   1
+
+ Molecular orbital dump at record        2100.2
+
+ Initial occupancy:   4   1   3   0
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   ORB.
+    1      0.000D+00      0.000D+00       -78.46480556    139.955625    0.00000    0.00000    0.00000    0    start
+    2      0.000D+00      0.191D-01       -78.44844586    129.525147    0.00000    0.00000    0.00000    1    diag
+    3      0.178D-01      0.215D-01       -78.54686112    134.927747    0.00000    0.00000    0.00000    2    diag
+    4      0.111D-01      0.529D-03       -78.54690658    134.909795    0.00000    0.00000    0.00000    3    diag
+    5      0.132D-02      0.688D-04       -78.54690760    134.907831    0.00000    0.00000    0.00000    4    diag
+    6      0.117D-03      0.187D-04       -78.54690766    134.909124    0.00000    0.00000    0.00000    5    diag
+    7      0.169D-04      0.441D-05       -78.54690767    134.909349    0.00000    0.00000    0.00000    6    diag
+    8      0.479D-05      0.543D-06       -78.54690767    134.909427    0.00000    0.00000    0.00000    7    diag
+    9      0.488D-06      0.654D-07       -78.54690767    134.909418    0.00000    0.00000    0.00000    0    orth
+
+ Final occupancy:   4   1   3   0
+
+ !RKS STATE  1.1 Energy               -78.546907665423
+ Nuclear energy                        33.32001007
+ One-electron energy                 -170.26051000
+ Two-electron energy                   67.45470923
+ SCF exchange energy                  -11.72809038     Factor= 0.2700
+ Density functional                    -9.06111697     XC-M06=-9.06111697
+ Virial quotient                       -1.00593492
+ !RKS STATE  1.1 Dipole moment          0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1          4.1          5.1          6.1
+    -10.237947    -0.770683    -0.429202    -0.367995     0.063911     0.127420
+
+         1.2          2.2          3.2
+     -0.288318     0.228424     0.719313
+
+         1.3          2.3          3.3          4.3          5.3
+    -10.237072    -0.589035    -0.482959     0.080887     0.086011
+
+         1.4          2.4
+      0.002041     0.311701
+
+
+ HOMO      1.2    -0.288318 =      -7.8455eV
+ LUMO      1.4     0.002041 =       0.0555eV
+ LUMO-HOMO         0.290359 =       7.9011eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       38.84       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       5        2.89       700     1000      520     1800     2100   
+                                         GEOM     BASIS   MCVARS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL    KS-SCF       INT
+ CPU TIMES  *         4.77      2.12      2.00
+ REAL TIME  *         5.16 SEC
+ DISK USED  *        67.86 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * OPT (Geometry optimization)     Authors: F. Eckert and H.-J. Werner
+
+
+ BFGS update of hessian
+
+ *** Long output written to logfile /scratch/on41/pk8622/Test_Calcs/Molpro/VPT2/ethene_vpt2.log ***
+
+
+ Geometry optimization using default procedure for command KS-SCF
+
+ Geometry written to block  1 of record 700
+
+ Making model hessian for cartesian coordinates
+
+ Entering Rational Function Geometry Optimization
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS   CPU-time
+   1   -78.54690767   -78.54732333    -0.00041567  0.02624033  0.02788782  0.00232399  0.02271653  0.02903288  0.01185262     11.22
+   2   -78.54732333   -78.54738486    -0.00006153  0.00609420  0.00653180  0.00054432  0.01381521  0.01635929  0.00667865     22.26
+ Freezing grid
+   3   -78.54738486   -78.54740769    -0.00002283  0.00029045  0.00044650  0.00003721  0.00219604  0.00239146  0.00097631     33.43
+   4   -78.54740769   -78.54746034    -0.00005265  0.00064610  0.00073828  0.00006152  0.01383631  0.01403180  0.00572846     44.36
+   5   -78.54746034   -78.54742000     0.00004034  0.00128906  0.00168210  0.00014017  0.01086655  0.01110149  0.00453216     55.13
+   6   -78.54742000   -78.54742000     0.00000001  0.00063939  0.00067066  0.00005589  0.00039588  0.00039674  0.00016197     65.86
+   7   -78.54742000   -78.54742518    -0.00000519  0.00051704  0.00054699  0.00004558  0.00167702  0.00216837  0.00088523     76.75
+   8   -78.54742518   -78.54742597    -0.00000078  0.00001515  0.00001663  0.00000139  0.00018230  0.00018285  0.00007465     87.25
+
+ END OF GEOMETRY OPTIMIZATION.
+
+ Current geometry (xyz format, in Angstrom)
+
+    6
+ KS-SCF000/DEF2-TZVP  ENERGY=-78.54742597
+ C          0.0000000000       -0.6593462176        0.0000000000
+ C          0.0000000000        0.6593462176        0.0000000000
+ H          0.0000000000       -1.2270273695        0.9229646894
+ H          0.0000000000       -1.2270268581       -0.9229650729
+ H          0.0000000000        1.2270268581        0.9229650729
+ H          0.0000000000        1.2270273695       -0.9229646894
+
+ **********************************************************************************************************************************
+
+ Geometry written to block  1 of record 700
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       41.39       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       5        2.89       700     1000      520     1800     2100   
+                                         GEOM     BASIS   MCVARS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL      OPTG    KS-SCF       INT
+ CPU TIMES  *        92.08     87.26      2.12      2.00
+ REAL TIME  *        94.80 SEC
+ DISK USED  *        74.62 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * HESSIAN
+
+ Computing numerical hessian using default procedure for command KS-SCF
+
+ Symmetry elements for unique displacements: X  Y  Z  
+
+ Using AUTO symmetry option
+
+ Running default procedure: KS-SCF000
+ 
+
+ Recomputing wavefunction at reference geometry
+
+ Numerically approximating hessian using central gradient differences
+
+ Task list generated. Total number of displacements:      9
+
+ Tasks on processor    0 finished.  CPU=     61.77 sec, Elapsed=     62.13 sec. All tasks on all processors finished.
+
+ KS-SCF hessian saved to record  5300.2
+
+ PROGRAM * FREQUENCIES (Calculation of harmonic vibrational spectra for KS-SCF)
+
+
+ Permanent Dipole Moment [debye]
+   1-  3    0.000000    0.000000    0.000000
+
+ Dipole Moment Norm    0.0000000 [debye]
+
+ Dipole Moment Derivatives [debye/ang]
+                   1             2             3             4             5             6             7             8
+         1    -1.3859957     0.0000000     0.0000000    -1.3859957     0.0000000     0.0000000     0.6930107     0.0000000
+         2     0.0000000    -0.2459105     0.0000000     0.0000000    -0.2459105     0.0000000     0.0000000     0.1230553
+         3     0.0000000     0.0000000     0.5758232     0.0000000     0.0000000     0.5758232     0.0000000     0.1186933
+                   9            10            11            12            13            14            15            16
+         1     0.0000000     0.6930107     0.0000000     0.0000000     0.6930107     0.0000000     0.0000000     0.6930107
+         2     0.4393755     0.0000000     0.1230553    -0.4393755     0.0000000     0.1230553    -0.4393755     0.0000000
+         3    -0.2872111     0.0000000    -0.1186933    -0.2872111     0.0000000    -0.1186933    -0.2872111     0.0000000
+                  17            18
+         1     0.0000000     0.0000000
+         2     0.1230553     0.4393755
+         3     0.1186933    -0.2872111
+
+ Projecting out rotations and translations
+
+   Low Vibration      Wavenumber
+        Nr             [1/cm] 
+        1                0.00
+        2                0.00
+        3                0.00
+        4                0.00
+        5                0.00
+        6                0.00
+
+     Vibration        Wavenumber
+        Nr             [1/cm] 
+        1              826.15
+        2              944.10
+        3              959.28
+        4             1039.77
+        5             1220.82
+        6             1366.23
+        7             1439.70
+        8             1692.93
+        9             3122.27
+       10             3137.54
+       11             3203.13
+       12             3228.30
+
+ FREQUENCIES * CALCULATION OF NORMAL MODES FOR KS-SCF
+
+
+ Atomic Coordinates
+
+  Nr  Atom  Charge       X              Y              Z
+
+   1   C     6.00    0.000000000   -1.245983773    0.000000000
+   2   C     6.00    0.000000000    1.245983773    0.000000000
+   3   H     1.00    0.000000000   -2.318745192    1.744150848
+   4   H     1.00    0.000000000   -2.318745192   -1.744150848
+   5   H     1.00    0.000000000    2.318745192    1.744150848
+   6   H     1.00    0.000000000    2.318745192   -1.744150848
+
+ Gradient norm at reference geometry: 0.31425D-04
+
+ Normal Modes
+
+                              1 B2u       2 B3u       3 B2g       4 Au        5 B3g
+ Wavenumbers [cm-1]          826.15      944.10      959.28     1039.77     1220.82
+ Intensities [km/mol]          0.49       94.09        0.00        0.00        0.00
+ Intensities [relative]        0.52      100.00        0.00        0.00        0.00
+           CX1             -0.00000    -0.07741     0.12379    -0.00000    -0.00000
+           CY1              0.00000     0.00000     0.00000     0.00000     0.00000
+           CZ1             -0.03899     0.00000     0.00000    -0.00000     0.12466
+           CX2              0.00000    -0.07741    -0.12379     0.00000    -0.00000
+           CY2              0.00000    -0.00000     0.00000    -0.00000    -0.00000
+           CZ2             -0.03899    -0.00000    -0.00000     0.00000    -0.12466
+           HX3              0.00000     0.46085    -0.39602     0.49806     0.00000
+           HY3              0.43028    -0.00000    -0.00000     0.00000    -0.37724
+           HZ3              0.23210    -0.00000    -0.00000     0.00000    -0.11503
+           HX4             -0.00000     0.46085    -0.39602    -0.49806    -0.00000
+           HY4             -0.43028     0.00000     0.00000     0.00000     0.37724
+           HZ4              0.23210    -0.00000    -0.00000    -0.00000    -0.11503
+           HX5              0.00000     0.46085     0.39602    -0.49806    -0.00000
+           HY5             -0.43028    -0.00000    -0.00000    -0.00000    -0.37724
+           HZ5              0.23210     0.00000     0.00000     0.00000     0.11503
+           HX6              0.00000     0.46085     0.39602     0.49806     0.00000
+           HY6              0.43028     0.00000     0.00000    -0.00000     0.37724
+           HZ6              0.23210     0.00000     0.00000    -0.00000     0.11503
+
+                              6 Ag        7 B1u       8 Ag        9 B1u      10 Ag 
+ Wavenumbers [cm-1]         1366.23     1439.70     1692.93     3122.27     3137.54
+ Intensities [km/mol]          0.00       20.31        0.00       15.04        0.00
+ Intensities [relative]        0.00       21.58        0.00       15.98        0.00
+           CX1             -0.00000     0.00000    -0.00000    -0.00000    -0.00000
+           CY1              0.07379    -0.06532     0.18260     0.04153     0.05364
+           CZ1             -0.00000     0.00000    -0.00000    -0.00000     0.00000
+           CX2             -0.00000     0.00000     0.00000     0.00000     0.00000
+           CY2             -0.07379    -0.06532    -0.18260     0.04153    -0.05364
+           CZ2              0.00000    -0.00000     0.00000     0.00000     0.00000
+           HX3             -0.00000    -0.00000    -0.00000    -0.00000    -0.00000
+           HY3              0.42203     0.38890    -0.09842    -0.24727    -0.24548
+           HZ3              0.19374     0.26723    -0.19965     0.42029     0.41312
+           HX4              0.00000     0.00000     0.00000    -0.00000     0.00000
+           HY4              0.42203     0.38890    -0.09842    -0.24727    -0.24548
+           HZ4             -0.19374    -0.26723     0.19965    -0.42029    -0.41312
+           HX5              0.00000     0.00000    -0.00000    -0.00000    -0.00000
+           HY5             -0.42203     0.38890     0.09842    -0.24727     0.24548
+           HZ5              0.19374    -0.26723    -0.19965    -0.42029     0.41312
+           HX6             -0.00000    -0.00000     0.00000    -0.00000    -0.00000
+           HY6             -0.42203     0.38890     0.09842    -0.24727     0.24548
+           HZ6             -0.19374     0.26723     0.19965     0.42029    -0.41312
+
+                             11 B3g      12 B2u
+ Wavenumbers [cm-1]         3203.13     3228.30
+ Intensities [km/mol]          0.00       18.05
+ Intensities [relative]        0.00       19.18
+           CX1              0.00000     0.00000
+           CY1             -0.00000     0.00000
+           CZ1             -0.06574    -0.06688
+           CX2             -0.00000     0.00000
+           CY2             -0.00000     0.00000
+           CZ2              0.06574    -0.06688
+           HX3             -0.00000     0.00000
+           HY3             -0.25104    -0.25084
+           HZ3              0.39914     0.39814
+           HX4              0.00000    -0.00000
+           HY4              0.25104     0.25084
+           HZ4              0.39914     0.39814
+           HX5             -0.00000     0.00000
+           HY5             -0.25104     0.25084
+           HZ5             -0.39914     0.39814
+           HX6              0.00000     0.00000
+           HY6              0.25104    -0.25084
+           HZ6             -0.39914     0.39814
+
+
+ Normal Modes of low/zero frequencies
+
+                                  1           2           3           4           5
+ Wavenumbers [cm-1]            0.00        0.00        0.00        0.00        0.00
+ Intensities [km/mol]          0.00        0.00        0.00        0.00        0.00
+ Intensities [relative]        0.00        0.00        0.00        0.00        0.00
+           CX1              0.24833    -0.00681    -0.00169    -0.00018    -0.01169
+           CY1             -0.00266    -0.02271     0.06072    -0.09334     0.08554
+           CZ1              0.00264     0.17965     0.14643     0.00844    -0.06005
+           CX2              0.04041    -0.12897     0.17204     0.09241     0.03881
+           CY2             -0.00266    -0.02271     0.06072    -0.09334     0.08554
+           CZ2              0.00399     0.10658    -0.00720     0.16970     0.10599
+           HX3              0.37293     0.18611    -0.08675    -0.19298     0.29491
+           HY3             -0.00361     0.02843     0.16825    -0.20621    -0.03067
+           HZ3              0.00205     0.21110     0.21256    -0.06098    -0.13153
+           HX4              0.30274    -0.09456    -0.06620     0.11288    -0.36177
+           HY4             -0.00171    -0.07385    -0.04680     0.01953     0.20176
+           HZ4              0.00205     0.21110     0.21256    -0.06098    -0.13153
+           HX5             -0.01400    -0.04123     0.23655    -0.02066     0.38889
+           HY5             -0.00361     0.02843     0.16825    -0.20621    -0.03067
+           HZ5              0.00457     0.07512    -0.07333     0.23912     0.17748
+           HX6             -0.08419    -0.32189     0.25710     0.28521    -0.26780
+           HY6             -0.00171    -0.07385    -0.04680     0.01953     0.20176
+           HZ6              0.00457     0.07512    -0.07333     0.23912     0.17748
+
+                                  6
+ Wavenumbers [cm-1]            0.00
+ Intensities [km/mol]          0.00
+ Intensities [relative]        0.00
+           CX1              0.01281
+           CY1              0.12423
+           CZ1              0.00901
+           CX2             -0.06409
+           CY2              0.12423
+           CZ2              0.07760
+           HX3             -0.26365
+           HY3              0.07623
+           HZ3             -0.02051
+           HX4              0.35548
+           HY4              0.17224
+           HZ4             -0.02051
+           HX5             -0.40676
+           HY5              0.07623
+           HZ5              0.10712
+           HX6              0.21237
+           HY6              0.17224
+           HZ6              0.10712
+
+
+ Frequencies dumped to record   5400.2
+
+ Zero point energy:  0.05053025 [H]    11090.11 [1/CM]      132.67 [KJ/MOL]
+
+ Recomputing wavefunction at initial geometry
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       41.94       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2      13        6.05       700     1000      520     1800     2100      701      702     1001     1800(1)  2101   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM     GEOM     BASIS    GRID      RKS  
+                                         5300     5450     5400   
+                                         HESS     NMOD     FREQ   
+
+ PROGRAMS   *        TOTAL      FREQ    KS-SCF    KS-SCF    KS-SCF       INT      OPTG    KS-SCF       INT
+ CPU TIMES  *       159.90      3.31      5.33      8.58      1.46      1.57     87.26      2.12      2.00
+ REAL TIME  *       163.71 SEC
+ DISK USED  *       109.22 MB
+ **********************************************************************************************************************************
+
+ Density functional group M06=XC-M06
+ Functional: XC-M06(via MFM 1.6)                                               Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+ 
+
+ Exact exchange will be calculated, factor:  0.2700
+
+ Functional: XC-M06                    Factor:  1.0000
+ 
+   72253 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       8+    8-
+ CONVERGENCE THRESHOLDS:    1.00E-07 (Density)    1.00E-06 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+ Orbital guess generated from atomic densities. Full valence occupancy:    6   1   6   1
+
+ Molecular orbital dump at record        2102.2
+
+ Initial occupancy:   4   1   3   0
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   ORB.
+    1      0.000D+00      0.000D+00       -78.46130166    140.578397    0.00000    0.00000    0.00000    0    start
+    2      0.000D+00      0.196D-01       -78.44288008    129.836997    0.00000    0.00000    0.00000    1    diag
+    3      0.184D-01      0.222D-01       -78.54737602    135.418228    0.00000    0.00000    0.00000    2    diag
+    4      0.116D-01      0.543D-03       -78.54742482    135.396263    0.00000    0.00000    0.00000    3    diag
+    5      0.143D-02      0.709D-04       -78.54742590    135.394392    0.00000    0.00000    0.00000    4    diag
+    6      0.116D-03      0.186D-04       -78.54742596    135.395727    0.00000    0.00000    0.00000    5    diag
+    7      0.169D-04      0.449D-05       -78.54742596    135.395911    0.00000    0.00000    0.00000    6    diag
+    8      0.446D-05      0.553D-06       -78.54742596    135.395992    0.00000    0.00000    0.00000    7    diag
+    9      0.443D-06      0.664D-07       -78.54742596    135.395988    0.00000    0.00000    0.00000    8    diag
+   10      0.731D-07      0.699D-08       -78.54742596    135.395985    0.00000    0.00000    0.00000    0    orth
+
+ Final occupancy:   4   1   3   0
+
+ !RKS STATE  1.1 Energy               -78.547425964478
+ Nuclear energy                        33.56397559
+ One-electron energy                 -170.73739337
+ Two-electron energy                   67.69799263
+ SCF exchange energy                  -11.74350043     Factor= 0.2700
+ Density functional                    -9.07200082     XC-M06=-9.07200082
+ Virial quotient                       -1.00516195
+ !RKS STATE  1.1 Dipole moment          0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+
+ Orbital energies:
+
+         1.1          2.1          3.1          4.1          5.1          6.1
+    -10.235059    -0.774241    -0.433490    -0.364911     0.065038     0.128383
+
+         1.2          2.2          3.2
+     -0.291090     0.227582     0.723210
+
+         1.3          2.3          3.3          4.3          5.3
+    -10.234065    -0.589129    -0.483260     0.080703     0.086294
+
+         1.4          2.4
+      0.005464     0.313230
+
+
+ HOMO      1.2    -0.291090 =      -7.9210eV
+ LUMO      1.4     0.005464 =       0.1487eV
+ LUMO-HOMO         0.296554 =       8.0697eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       41.94       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2      14        8.58       700     1000      520     1800     2100      701      702     1001     1800(1)  2101   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM     GEOM     BASIS    GRID      RKS  
+                                         5300     5450     5400     2102   
+                                         HESS     NMOD     FREQ      RKS  
+
+ PROGRAMS   *        TOTAL    KS-SCF    KS-SCF    KS-SCF    KS-SCF    KS-SCF       INT      OPTG    KS-SCF       INT
+ CPU TIMES  *       166.38      6.43      3.29      5.33      8.58      1.46      1.57     87.26      2.12      2.00
+ REAL TIME  *       170.84 SEC
+ DISK USED  *       109.22 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * SURF (Surface generation)   Authors: G. Rauhut 2004, T. Hrenar 2005, M. Neff 2012, D. Oschetzki 2013
+
+ Freezing grid
+
+ Reference geometry in SURF calculation
+
+   1  C     6.00     0.000000000    0.000000000   -1.245983773
+   2  C     6.00     0.000000000    0.000000000    1.245983773
+   3  H     1.00     0.000000000   -1.744150848   -2.318745192
+   4  H     1.00     0.000000000    1.744150848   -2.318745192
+   5  H     1.00     0.000000000   -1.744150848    2.318745192
+   6  H     1.00     0.000000000    1.744150848    2.318745192
+
+
+ The phase of the following normal coordinates was changed:
+  1 10 11
+
+ Information about detected symmetry elements:
+ Inversion center
+ C2-axis in direction (   0.0   0.0   1.0)^T
+ C2-axis in direction (   0.0   1.0   0.0)^T
+ C2-axis in direction (   1.0   0.0   0.0)^T
+ Reflexion plane with normal vector (   0.0   0.0   1.0)^T
+ Reflexion plane with normal vector (   0.0   1.0   0.0)^T
+ Reflexion plane with normal vector (   1.0   0.0   0.0)^T
+
+ Detected point group: D2h
+
+ Starting mppx-calculation of energy surfaces:
+
+ Calculating 1D potential
+
+ 1D:  12  Points:   3 Conv: 0.00073048 0.00073049  s
+ 1D:  11  Points:   3 Conv: 0.00072312 0.00072312  s
+ 1D:  10  Points:   6 Conv: 0.00070498 0.00070498
+ 1D:   9  Points:   3 Conv: 0.00069996 0.00069997  s
+ 1D:   8  Points:   6 Conv: 0.00031981 0.00031981
+ 1D:   7  Points:   3 Conv: 0.00024819 0.00024819  s
+ 1D:   6  Points:   6 Conv: 0.00027375 0.00027376
+ 1D:   5  Points:   3 Conv: 0.00019261 0.00019261  s
+ 1D:   4  Points:   3 Conv: 0.00018042 0.00018042  s
+ 1D:   3  Points:   3 Conv: 0.00016492 0.00016492  s
+ 1D:   2  Points:   3 Conv: 0.00016407 0.00016407  s
+ 1D:   1  Points:   3 Conv: 0.00011373 0.00011372  s
+
+ The determined shift and scalnm parameters are:
+
+ scalnm,mode= 1,sfac=1.000,shift= 0
+ scalnm,mode= 2,sfac=1.000,shift= 0
+ scalnm,mode= 3,sfac=1.000,shift= 0
+ scalnm,mode= 4,sfac=1.000,shift= 0
+ scalnm,mode= 5,sfac=1.000,shift= 0
+ scalnm,mode= 6,sfac=1.000,shift= 0
+ scalnm,mode= 7,sfac=1.000,shift= 0
+ scalnm,mode= 8,sfac=1.000,shift= 0
+ scalnm,mode= 9,sfac=1.000,shift= 0
+ scalnm,mode=10,sfac=1.000,shift= 0
+ scalnm,mode=11,sfac=1.000,shift= 0
+ scalnm,mode=12,sfac=1.000,shift= 0
+
+ Calculating 2D coupling potential
+
+ 2D:  12  11  Points:   4 Conv: 0.00000177 0.00000181
+ 2D:  12  10  Points:   8 Conv: 0.00003962 0.00004000
+ 2D:  12   9  Points:   4 Conv: 0.00000169 0.00000171
+ 2D:  12   8  Points:   8 Conv: 0.00000032 0.00000030
+ 2D:  12   7  Points:   4 Conv: 0.00000056 0.00000057
+ 2D:  12   6  Points:   8 Conv: 0.00000392 0.00000389
+ 2D:  12   5  Points:   4 Conv: 0.00000043 0.00000043
+ 2D:  12   4  Points:   4 Conv: 0.00000086 0.00000084
+ 2D:  12   3  Points:   4 Conv: 0.00000100 0.00000098
+ 2D:  12   2  Points:   4 Conv: 0.00000111 0.00000109
+ 2D:  11  10  Points:   8 Conv: 0.00004002 0.00004041
+ 2D:  11   9  Points:   4 Conv: 0.00000170 0.00000173
+ 2D:  11   8  Points:   8 Conv: 0.00000056 0.00000054
+ 2D:  11   7  Points:   4 Conv: 0.00000057 0.00000058
+ 2D:  11   6  Points:   8 Conv: 0.00000374 0.00000371
+ 2D:  11   5  Points:   8 Conv: 0.00001399 0.00001368
+ 2D:  11   4  Points:   4 Conv: 0.00000085 0.00000083
+ 2D:  11   3  Points:   4 Conv: 0.00000102 0.00000100
+ 2D:  11   2  Points:   4 Conv: 0.00000109 0.00000106
+ 2D:  11   1  Points:   4 Conv: 0.00000077 0.00000078
+ 2D:  10   9  Points:   8 Conv: 0.00003730 0.00003765
+ 2D:  10   8  Points:  16 Conv: 0.00000890 0.00000879
+ 2D:  10   7  Points:   8 Conv: 0.00000605 0.00000606
+ 2D:  10   5  Points:   8 Conv: 0.00000619 0.00000619
+ 2D:  10   4  Points:   8 Conv: 0.00000795 0.00000799
+ 2D:  10   3  Points:   8 Conv: 0.00000908 0.00000913
+ 2D:  10   2  Points:   8 Conv: 0.00001048 0.00001054
+ 2D:  10   1  Points:   8 Conv: 0.00001450 0.00001444
+ 2D:   9   8  Points:   8 Conv: 0.00000222 0.00000225
+ 2D:   9   7  Points:   8 Conv: 0.00001429 0.00001372
+ 2D:   9   6  Points:   8 Conv: 0.00000091 0.00000088
+ 2D:   9   5  Points:   4 Conv: 0.00000051 0.00000051
+ 2D:   9   4  Points:   4 Conv: 0.00000088 0.00000086
+ 2D:   9   3  Points:   4 Conv: 0.00000096 0.00000093
+ 2D:   9   2  Points:   4 Conv: 0.00000104 0.00000101
+ 2D:   9   1  Points:   4 Conv: 0.00000093 0.00000093
+ 2D:   8   7  Points:   8 Conv: 0.00000724 0.00000700
+ 2D:   8   6  Points:  16 Conv: 0.00000638 0.00000627
+ 2D:   8   5  Points:   8 Conv: 0.00000326 0.00000307
+ 2D:   8   4  Points:   8 Conv: 0.00000304 0.00000298
+ 2D:   8   3  Points:   8 Conv: 0.00000402 0.00000393
+ 2D:   8   2  Points:   8 Conv: 0.00000446 0.00000437
+ 2D:   8   1  Points:   8 Conv: 0.00000758 0.00000706
+ 2D:   7   6  Points:   8 Conv: 0.00000812 0.00000776
+ 2D:   7   5  Points:   4 Conv: 0.00000076 0.00000070
+ 2D:   7   4  Points:   4 Conv: 0.00000000 0.00000001
+ 2D:   7   3  Points:   4 Conv: 0.00000002 0.00000001
+ 2D:   7   2  Points:   4 Conv: 0.00000000 0.00000001
+ 2D:   7   1  Points:   4 Conv: 0.00000105 0.00000093
+ 2D:   6   5  Points:   8 Conv: 0.00000327 0.00000300
+ 2D:   6   4  Points:   8 Conv: 0.00000224 0.00000217
+ 2D:   6   3  Points:   8 Conv: 0.00000420 0.00000410
+ 2D:   5   4  Points:   4 Conv: 0.00000013 0.00000012
+ 2D:   5   3  Points:   4 Conv: 0.00000014 0.00000013
+ 2D:   5   2  Points:   4 Conv: 0.00000015 0.00000014
+ 2D:   5   1  Points:   4 Conv: 0.00000134 0.00000120
+ 2D:   4   3  Points:   4 Conv: 0.00000001 0.00000001
+ 2D:   4   2  Points:   4 Conv: 0.00000000 0.00000001
+ 2D:   4   1  Points:   4 Conv: 0.00000011 0.00000010
+ 2D:   3   2  Points:   4 Conv: 0.00000004 0.00000003
+ 2D:   3   1  Points:   4 Conv: 0.00000010 0.00000008
+ 2D:   2   1  Points:   4 Conv: 0.00000015 0.00000013
+ 2D:  12   1  Points:  18 Conv: 0.00001690 0.00001691
+ 2D:  10   6  Points:  36 Conv: 0.00001223 0.00001223
+ 2D:   6   2  Points:  18 Conv: 0.00000573 0.00000573
+ 2D:   6   1  Points:  18 Conv: 0.00000792 0.00000793
+
+ Calculating 3D coupling potential
+
+ 3D:  12  11  10  Points:    2 Conv: 0.00000031
+ 3D:  12  11   9  Points:    2 Conv: 0.00006116
+ 3D:  12  11   8  Points:    2 Conv: 0.00000003
+ 3D:  12  11   7  Points:    2 Conv: 0.00000614
+ 3D:  12  11   6  Points:    2 Conv: 0.00000001
+ 3D:  12  11   5  Points:    2 Conv: 0.00000017
+ 3D:  12  11   4  Points:    1 Conv: 0.00000003
+ 3D:  12  11   3  Points:    1 Conv: 0.00000003
+ 3D:  12  11   2  Points:    1 Conv: 0.00000003
+ 3D:  12  11   1  Points:    2 Conv: 0.00000026
+ 3D:  12  10   9  Points:    2 Conv: 0.00000029
+ 3D:  12  10   8  Points:    4 Conv: 0.00000004
+ 3D:  12  10   7  Points:    2 Conv: 0.00000006
+ 3D:  12  10   6  Points:    4 Conv: 0.00000025
+ 3D:  12  10   5  Points:    2 Conv: 0.00000005
+ 3D:  12  10   4  Points:    2 Conv: 0.00000004
+ 3D:  12  10   3  Points:    2 Conv: 0.00000005
+ 3D:  12  10   2  Points:    2 Conv: 0.00000006
+ 3D:  12  10   1  Points:    4 Conv: 0.00000011
+ 3D:  12   9   8  Points:    2 Conv: 0.00000003
+ 3D:  12   9   7  Points:    2 Conv: 0.00000026
+ 3D:  12   9   6  Points:    2 Conv: 0.00000001
+ 3D:  12   9   5  Points:    2 Conv: 0.00000031
+ 3D:  12   9   4  Points:    1 Conv: 0.00000003
+ 3D:  12   9   3  Points:    1 Conv: 0.00000003
+ 3D:  12   9   2  Points:    1 Conv: 0.00000003
+ 3D:  12   9   1  Points:    2 Conv: 0.00000002
+ 3D:  12   8   7  Points:    2 Conv: 0.00000007
+ 3D:  12   8   6  Points:    4 Conv: 0.00000043
+ 3D:  12   8   5  Points:    2 Conv: 0.00000005
+ 3D:  12   8   4  Points:    2 Conv: 0.00000001
+ 3D:  12   8   3  Points:    2 Conv: 0.00000001
+ 3D:  12   8   2  Points:    2 Conv: 0.00000001
+ 3D:  12   8   1  Points:    4 Conv: 0.00000928
+ 3D:  12   7   6  Points:    2 Conv: 0.00000009
+ 3D:  12   7   5  Points:    2 Conv: 0.00000964
+ 3D:  12   7   4  Points:    1 Conv: 0.00000000
+ 3D:  12   7   3  Points:    1 Conv: 0.00000001
+ 3D:  12   7   2  Points:    1 Conv: 0.00000001
+ 3D:  12   7   1  Points:    2 Conv: 0.00000106
+ 3D:  12   6   5  Points:    2 Conv: 0.00000007
+ 3D:  12   6   4  Points:    2 Conv: 0.00000001
+ 3D:  12   6   3  Points:    2 Conv: 0.00000001
+ 3D:  12   6   2  Points:    2 Conv: 0.00000001
+ 3D:  12   6   1  Points:    4 Conv: 0.00001041
+ 3D:  12   5   4  Points:    1 Conv: 0.00000001
+ 3D:  12   5   3  Points:    1 Conv: 0.00000001
+ 3D:  12   5   2  Points:    1 Conv: 0.00000001
+ 3D:  12   5   1  Points:    2 Conv: 0.00000069
+ 3D:  12   4   3  Points:    2 Conv: 0.00001387
+ 3D:  12   4   2  Points:    1 Conv: 0.00000002
+ 3D:  12   4   1  Points:    2 Conv: 0.00000017
+ 3D:  12   3   2  Points:    1 Conv: 0.00000002
+ 3D:  12   3   1  Points:    2 Conv: 0.00000024
+ 3D:  12   2   1  Points:    2 Conv: 0.00000031
+ 3D:  11  10   9  Points:    2 Conv: 0.00000029
+ 3D:  11  10   8  Points:    4 Conv: 0.00000004
+ 3D:  11  10   7  Points:    2 Conv: 0.00000006
+ 3D:  11  10   6  Points:    4 Conv: 0.00000024
+ 3D:  11  10   5  Points:    4 Conv: 0.00000089
+ 3D:  11  10   4  Points:    2 Conv: 0.00000004
+ 3D:  11  10   3  Points:    2 Conv: 0.00000005
+ 3D:  11  10   2  Points:    2 Conv: 0.00000006
+ 3D:  11  10   1  Points:    2 Conv: 0.00000008
+ 3D:  11   9   8  Points:    2 Conv: 0.00000003
+ 3D:  11   9   7  Points:    2 Conv: 0.00000027
+ 3D:  11   9   6  Points:    2 Conv: 0.00000001
+ 3D:  11   9   5  Points:    2 Conv: 0.00000001
+ 3D:  11   9   4  Points:    1 Conv: 0.00000003
+ 3D:  11   9   3  Points:    1 Conv: 0.00000003
+ 3D:  11   9   2  Points:    1 Conv: 0.00000003
+ 3D:  11   9   1  Points:    2 Conv: 0.00000017
+ 3D:  11   8   7  Points:    2 Conv: 0.00000007
+ 3D:  11   8   6  Points:    4 Conv: 0.00000043
+ 3D:  11   8   5  Points:    4 Conv: 0.00000740
+ 3D:  11   8   4  Points:    2 Conv: 0.00000001
+ 3D:  11   8   3  Points:    2 Conv: 0.00000001
+ 3D:  11   8   2  Points:    2 Conv: 0.00000001
+ 3D:  11   8   1  Points:    2 Conv: 0.00000010
+ 3D:  11   7   6  Points:    2 Conv: 0.00000009
+ 3D:  11   7   5  Points:    2 Conv: 0.00000088
+ 3D:  11   7   4  Points:    1 Conv: 0.00000000
+ 3D:  11   7   3  Points:    1 Conv: 0.00000000
+ 3D:  11   7   2  Points:    1 Conv: 0.00000000
+ 3D:  11   7   1  Points:    2 Conv: 0.00001373
+ 3D:  11   6   5  Points:    4 Conv: 0.00000663
+ 3D:  11   6   4  Points:    2 Conv: 0.00000001
+ 3D:  11   6   3  Points:    2 Conv: 0.00000001
+ 3D:  11   6   2  Points:    2 Conv: 0.00000001
+ 3D:  11   6   1  Points:    2 Conv: 0.00000013
+ 3D:  11   5   4  Points:    2 Conv: 0.00000015
+ 3D:  11   5   3  Points:    2 Conv: 0.00000018
+ 3D:  11   5   2  Points:    2 Conv: 0.00000023
+ 3D:  11   5   1  Points:    2 Conv: 0.00000113
+ 3D:  11   4   3  Points:    1 Conv: 0.00000001
+ 3D:  11   4   2  Points:    2 Conv: 0.00001415
+ 3D:  11   4   1  Points:    1 Conv: 0.00000001
+ 3D:  11   3   2  Points:    1 Conv: 0.00000002
+ 3D:  11   3   1  Points:    1 Conv: 0.00000001
+ 3D:  11   2   1  Points:    1 Conv: 0.00000001
+ 3D:  10   9   8  Points:    4 Conv: 0.00000014
+ 3D:  10   9   7  Points:    4 Conv: 0.00000019
+ 3D:  10   9   6  Points:    4 Conv: 0.00000008
+ 3D:  10   9   5  Points:    2 Conv: 0.00000006
+ 3D:  10   9   4  Points:    2 Conv: 0.00000004
+ 3D:  10   9   3  Points:    2 Conv: 0.00000005
+ 3D:  10   9   2  Points:    2 Conv: 0.00000005
+ 3D:  10   9   1  Points:    2 Conv: 0.00000010
+ 3D:  10   8   7  Points:    4 Conv: 0.00000055
+ 3D:  10   8   6  Points:    8 Conv: 0.00000291
+ 
+ 3D:  10   8   5  Points:    4 Conv: 0.00000035
+ 3D:  10   8   4  Points:    4 Conv: 0.00000006
+ 3D:  10   8   3  Points:    4 Conv: 0.00000011
+ 3D:  10   8   2  Points:    4 Conv: 0.00000011
+ 3D:  10   8   1  Points:    4 Conv: 0.00000062
+ 3D:  10   7   6  Points:    4 Conv: 0.00000067
+ 3D:  10   7   5  Points:    2 Conv: 0.00000013
+ 3D:  10   7   4  Points:    2 Conv: 0.00000001
+ 3D:  10   7   3  Points:    2 Conv: 0.00000001
+ 3D:  10   7   2  Points:    2 Conv: 0.00000001
+ 3D:  10   7   1  Points:    2 Conv: 0.00000023
+ 3D:  10   6   5  Points:    4 Conv: 0.00000036
+ 3D:  10   6   4  Points:    4 Conv: 0.00000009
+ 3D:  10   6   3  Points:    4 Conv: 0.00000018
+ 3D:  10   6   2  Points:    4 Conv: 0.00000026
+ 3D:  10   6   1  Points:    4 Conv: 0.00000081
+ 3D:  10   5   4  Points:    2 Conv: 0.00000001
+ 3D:  10   5   3  Points:    2 Conv: 0.00000001
+ 3D:  10   5   2  Points:    2 Conv: 0.00000001
+ 3D:  10   5   1  Points:    2 Conv: 0.00000022
+ 3D:  10   4   3  Points:    2 Conv: 0.00000006
+ 3D:  10   4   2  Points:    2 Conv: 0.00000006
+ 3D:  10   4   1  Points:    2 Conv: 0.00000001
+ 3D:  10   3   2  Points:    2 Conv: 0.00000007
+ 3D:  10   3   1  Points:    2 Conv: 0.00000001
+ 3D:  10   2   1  Points:    2 Conv: 0.00000001
+ 3D:   9   8   7  Points:    4 Conv: 0.00000631
+ 3D:   9   8   6  Points:    4 Conv: 0.00000041
+ 3D:   9   8   5  Points:    2 Conv: 0.00000003
+ 3D:   9   8   4  Points:    2 Conv: 0.00000000
+ 3D:   9   8   3  Points:    2 Conv: 0.00000000
+ 3D:   9   8   2  Points:    2 Conv: 0.00000000
+ 3D:   9   8   1  Points:    2 Conv: 0.00000006
+ 3D:   9   7   6  Points:    4 Conv: 0.00000649
+ 3D:   9   7   5  Points:    2 Conv: 0.00000048
+ 3D:   9   7   4  Points:    2 Conv: 0.00000009
+ 3D:   9   7   3  Points:    2 Conv: 0.00000021
+ 3D:   9   7   2  Points:    2 Conv: 0.00000027
+ 3D:   9   7   1  Points:    2 Conv: 0.00000094
+ 3D:   9   6   5  Points:    2 Conv: 0.00000005
+ 3D:   9   6   4  Points:    2 Conv: 0.00000000
+ 3D:   9   6   3  Points:    2 Conv: 0.00000000
+ 3D:   9   6   2  Points:    2 Conv: 0.00000000
+ 3D:   9   6   1  Points:    2 Conv: 0.00000008
+ 3D:   9   5   4  Points:    1 Conv: 0.00000001
+ 3D:   9   5   3  Points:    1 Conv: 0.00000001
+ 3D:   9   5   2  Points:    1 Conv: 0.00000001
+ 3D:   9   5   1  Points:    2 Conv: 0.00001449
+ 3D:   9   4   3  Points:    1 Conv: 0.00000002
+ 3D:   9   4   2  Points:    1 Conv: 0.00000002
+ 3D:   9   4   1  Points:    1 Conv: 0.00000001
+ 3D:   9   3   2  Points:    2 Conv: 0.00001537
+ 3D:   9   3   1  Points:    1 Conv: 0.00000001
+ 3D:   9   2   1  Points:    1 Conv: 0.00000001
+ 3D:   8   7   6  Points:    4 Conv: 0.00000037
+ 3D:   8   7   5  Points:    2 Conv: 0.00000032
+ 3D:   8   7   4  Points:    2 Conv: 0.00000008
+ 3D:   8   7   3  Points:    2 Conv: 0.00000009
+ 3D:   8   7   2  Points:    2 Conv: 0.00000010
+ 3D:   8   7   1  Points:    2 Conv: 0.00000060
+ 3D:   8   6   5  Points:    4 Conv: 0.00000046
+ 3D:   8   6   4  Points:    4 Conv: 0.00000005
+ 3D:   8   6   3  Points:    4 Conv: 0.00000006
+ 3D:   8   6   2  Points:    4 Conv: 0.00000007
+ 3D:   8   6   1  Points:    4 Conv: 0.00000065
+ 3D:   8   5   4  Points:    2 Conv: 0.00000006
+ 3D:   8   5   3  Points:    2 Conv: 0.00000007
+ 3D:   8   5   2  Points:    2 Conv: 0.00000008
+ 3D:   8   5   1  Points:    2 Conv: 0.00000051
+ 3D:   8   4   3  Points:    2 Conv: 0.00000016
+ 3D:   8   4   2  Points:    2 Conv: 0.00000017
+ 3D:   8   4   1  Points:    2 Conv: 0.00000011
+ 3D:   8   3   2  Points:    2 Conv: 0.00000021
+ 3D:   8   3   1  Points:    2 Conv: 0.00000014
+ 3D:   8   2   1  Points:    2 Conv: 0.00000015
+ 3D:   7   6   5  Points:    2 Conv: 0.00000037
+ 3D:   7   6   4  Points:    2 Conv: 0.00000009
+ 3D:   7   6   3  Points:    2 Conv: 0.00000011
+ 3D:   7   6   2  Points:    2 Conv: 0.00000012
+ 3D:   7   6   1  Points:    2 Conv: 0.00000069
+ 3D:   7   5   4  Points:    1 Conv: 0.00000001
+ 3D:   7   5   3  Points:    1 Conv: 0.00000001
+ 3D:   7   5   2  Points:    1 Conv: 0.00000001
+ 3D:   7   5   1  Points:    2 Conv: 0.00000884
+ 3D:   7   4   3  Points:    1 Conv: 0.00000002
+ 3D:   7   4   2  Points:    1 Conv: 0.00000002
+ 3D:   7   4   1  Points:    1 Conv: 0.00000001
+ 3D:   7   3   2  Points:    2 Conv: 0.00000956
+ 3D:   7   3   1  Points:    1 Conv: 0.00000001
+ 3D:   7   2   1  Points:    1 Conv: 0.00000001
+ 3D:   6   5   4  Points:    2 Conv: 0.00000007
+ 3D:   6   5   3  Points:    2 Conv: 0.00000009
+ 3D:   6   5   2  Points:    2 Conv: 0.00000010
+ 3D:   6   5   1  Points:    2 Conv: 0.00000060
+ 3D:   6   4   3  Points:    2 Conv: 0.00000018
+ 3D:   6   4   2  Points:    2 Conv: 0.00000019
+ 3D:   6   4   1  Points:    2 Conv: 0.00000013
+ 3D:   6   3   2  Points:    2 Conv: 0.00000024
+ 3D:   6   3   1  Points:    2 Conv: 0.00000016
+ 3D:   6   2   1  Points:    2 Conv: 0.00000018
+ 3D:   5   4   3  Points:    1 Conv: 0.00000002
+ 3D:   5   4   2  Points:    2 Conv: 0.00000452
+ 3D:   5   4   1  Points:    1 Conv: 0.00000002
+ 3D:   5   3   2  Points:    1 Conv: 0.00000003
+ 3D:   5   3   1  Points:    1 Conv: 0.00000002
+ 3D:   5   2   1  Points:    1 Conv: 0.00000002
+ 3D:   4   3   2  Points:    1 Conv: 0.00000003
+ 3D:   4   3   1  Points:    2 Conv: 0.00000619
+ 3D:   4   2   1  Points:    1 Conv: 0.00000003
+ 3D:   3   2   1  Points:    1 Conv: 0.00000003
+
+ Grid calculation completed
+
+ Formal number of grid points:    467648
+ Actual number of grid points:      1134 Time (sec):       2612.3
+ Number of 1D grid points:           195 Time (sec):        458.7
+ Number of 2D grid points:           470 Time (sec):       1058.9
+ Number of 3D grid points:           469 Time (sec):       1094.8
+
+ CPU-Time for SURF calculation:       2620.6 sec.
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22       48.67       500      610      700      708      900      950      970     1007      129      960   
+                                          VAR    BASINP    GEOM     GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800      703   
+                                         GRID     GEOM   
+
+              2      60      340.18       700     1000      520     1800     2100      701      702     1001     1800(1)  2101   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM     GEOM     BASIS    GRID      RKS  
+                                         5300     5450     5400     2102     5600     5650      703     1002     2103      704   
+                                         HESS     NMOD     FREQ      RKS     SURF    DIPOLE    GEOM     BASIS     RKS     GEOM   
+                                         1003     2104      705     1004     2105      706     1005     2106      707     1006   
+                                         BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS   
+                                         2107      708     1007     2108      709     1008     2109      710     1009     2110   
+                                          RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS  
+                                          711     1010     2111      712     1011     2112      713     1012     2113      714   
+                                         GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM   
+                                         1013     2114      715     1014     2115     5650(1)   716     1015     2116     5550   
+                                         BASIS     RKS     GEOM     BASIS     RKS    DIPOLE    GEOM     BASIS     RKS    VIBINFO    
+
+ PROGRAMS   *        TOTAL      SURF       INT    KS-SCF       INT    KS-SCF       INT    KS-SCF       INT    KS-SCF       INT
+ CPU TIMES  *      2786.98     20.25      2.08      3.19      3.02      7.15      2.02      7.22      2.01      7.15      2.01
+ REAL TIME  *      2903.49 SEC
+ DISK USED  *       488.94 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * POLY (Transformation of PES grid representation to an analytic representation)   Authors: G. Rauhut 2008, M. Neff 2010, B. Ziegler 2019
+ 
+ Reading potential information from:      5600.2
+ Reading dipole information from:         5650.2
+ 
+ Watson correction term has NOT been added to the potential.
+
+ Time to compute the number of basis functions:    1.0 sec
+ Number of basis functions:  5
+
+        dim  chi_av       chi_max      time in sec      Surface
+
+ Energy 1D   0.5011E-16   0.3342E-15     0.0            3
+        2D   0.2051E-13   0.4079E-12     0.0           12  7
+        3D   0.2444E-12   0.7988E-11     1.0           12  7  6
+
+ Dipole 1D   0.8692E-13   0.2819E-11     0.0           12
+        2D   0.6596E-11   0.3537E-09     0.1            6 12
+        3D   0.2386E-10   0.2584E-08     3.2           12  8  6
+ 
+ Harmonic frequencies obtained from polynomial fit
+
+   Mode        Ref.         Fit
+
+  12 B2u     3228.30     3239.96
+  11 B3g     3203.13     3215.13
+  10 Ag      3137.54     3152.93
+   9 B1u     3122.27     3136.56
+   8 Ag      1692.93     1702.36
+   7 B1u     1439.70     1442.87
+   6 Ag      1366.23     1362.85
+   5 B3g     1220.82     1202.30
+   4 Au      1039.77     1104.44
+   3 B2g      959.28     1027.90
+   2 B3u      944.10     1019.56
+   1 B2u      826.15      807.91
+ 
+
+ CPU-Time for POLY calculation:          5.7 sec.
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22       48.67       500      610      700      708      900      950      970     1007      129      960   
+                                          VAR    BASINP    GEOM     GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800      703   
+                                         GRID     GEOM   
+
+              2      62      341.30       700     1000      520     1800     2100      701      702     1001     1800(1)  2101   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM     GEOM     BASIS    GRID      RKS  
+                                         5300     5450     5400     2102     5600     5650      703     1002     2103      704   
+                                         HESS     NMOD     FREQ      RKS     SURF    DIPOLE    GEOM     BASIS     RKS     GEOM   
+                                         1003     2104      705     1004     2105      706     1005     2106      707     1006   
+                                         BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS   
+                                         2107      708     1007     2108      709     1008     2109      710     1009     2110   
+                                          RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS  
+                                          711     1010     2111      712     1011     2112      713     1012     2113      714   
+                                         GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM   
+                                         1013     2114      715     1014     2115     5650(1)   716     1015     2116     5550   
+                                         BASIS     RKS     GEOM     BASIS     RKS    DIPOLE    GEOM     BASIS     RKS    VIBINFO    
+                                         5750     5770   
+                                         POLY      MU  
+
+ PROGRAMS   *        TOTAL      POLY    KS-SCF       INT    KS-SCF       INT    KS-SCF       INT    KS-SCF       INT    KS-SCF
+ CPU TIMES  *      2792.77      5.74      7.13      2.08      3.19      3.02      7.15      2.02      7.22      2.01      7.15
+ REAL TIME  *      2909.35 SEC
+ DISK USED  *       488.94 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * VPT2 (2nd Order Vibrational Perturbation Theory)   Authors: R. Ramakrishnan, G. Rauhut 2015, B. Schroeder 2017
+
+ Reading potential from record        5600.2
+
+ Asymmetric top molecule
+
+
+ Non-zero Coriolis zeta constants
+
+   Modes        a             b             c
+
+  12  9     -0.000000     -0.000000      0.038524
+  12  7      0.000000     -0.000000      0.999258
+  12  4     -0.000000      0.503642      0.000000
+  12  2     -0.863912     -0.000000      0.000000
+  11 10     -0.000000     -0.000000      0.061547
+  11  8      0.000000     -0.000000      0.648506
+  11  6     -0.000000      0.000000     -0.758717
+  11  3     -0.832513     -0.000000      0.000000
+  10  5      0.000000      0.000000     -0.902590
+  10  3     -0.000000      0.551278      0.000000
+   9  4     -0.843869      0.000000      0.000000
+   9  2      0.000000      0.536550     -0.000000
+   9  1     -0.000000     -0.000000     -0.999258
+   8  5     -0.000000      0.000000     -0.288340
+   8  3     -0.000000      0.699632      0.000000
+   7  4      0.536550      0.000000     -0.000000
+   7  2      0.000000      0.843869      0.000000
+   7  1      0.000000     -0.000000      0.038524
+   6  5     -0.000000     -0.000000     -0.319674
+   6  3     -0.000000     -0.454541      0.000000
+   5  3     -0.554005      0.000000      0.000000
+   4  1     -0.000000      0.863912      0.000000
+   2  1      0.503642     -0.000000      0.000000
+ 
+
+ VPT2 Vibration-rotation interaction constants (in cm-1)
+
+                       Harmonic                                Coriolis                                Anharmonic
+           _________________________________       _________________________________       _________________________________
+
+ Mode           A           B           C               A           B           C               A           B           C
+
+  12       -0.000000   -0.000000   -0.000000       -0.037594   -0.000568   -0.001806        0.057295    0.003192    0.003887
+  11       -0.002386   -0.000497   -0.000000       -0.035394   -0.000000   -0.002019        0.058178    0.003000    0.003782
+  10       -0.031704   -0.000016   -0.000248       -0.000000   -0.000690   -0.001214        0.070113    0.002399    0.003724
+   9       -0.000000   -0.000000   -0.000000       -0.038460   -0.000655   -0.001469        0.070081    0.002054    0.003487
+   8       -0.013723   -0.001294   -0.001258       -0.000000   -0.002952    0.000391        0.022201    0.007756    0.005973
+   7       -0.000000   -0.000000   -0.000000       -0.070938   -0.006212    0.001969        0.042761   -0.003770   -0.001314
+   6       -0.016013   -0.002942   -0.001011        0.000000   -0.002174   -0.000877        0.023602    0.000317    0.000917
+   5       -0.014138   -0.002942   -0.000000       -0.114569   -0.000000    0.004171        0.009565   -0.001495   -0.000740
+   4       -0.000000   -0.000000   -0.000000        0.121011   -0.014009    0.000000        0.000476   -0.000824   -0.000550
+   3       -0.000000   -0.000000   -0.000000        0.163508    0.006211   -0.000000        0.010577   -0.002293   -0.001257
+   2       -0.000000   -0.000000   -0.000000       -0.155801    0.007217    0.000000        0.016082   -0.003613   -0.001998
+   1       -0.000000   -0.000000   -0.000000        0.208276    0.014798    0.002256        0.025952   -0.004242   -0.002137
+
+
+                          Total
+           _________________________________
+
+ Mode           A           B           C
+
+  12        0.019701    0.002624    0.002081
+  11        0.020398    0.002504    0.001763
+  10        0.038409    0.001693    0.002262
+   9        0.031621    0.001400    0.002017
+   8        0.008478    0.003511    0.005106
+   7       -0.028177   -0.009982    0.000655
+   6        0.007589   -0.004800   -0.000972
+   5       -0.119142   -0.004437    0.003431
+   4        0.121487   -0.014833   -0.000550
+   3        0.174085    0.003918   -0.001257
+   2       -0.139719    0.003604   -0.001998
+   1        0.234228    0.010556    0.000119
+
+
+ VPT2 Quartic centrifugal distortion constants (in cm-1)
+
+                  Tau               Tau'
+
+    AAAA    -0.391808E-03     -0.391808E-03
+    BBBB    -0.796160E-05     -0.796160E-05
+    CCCC    -0.352249E-05     -0.352249E-05
+    BBAA     0.137765E-04     -0.533735E-04
+    CCAA    -0.218509E-05     -0.218509E-05
+    CCBB    -0.504638E-05     -0.504638E-05
+
+
+ VPT2 Quartic centrifugal distortion constants in the Nielsen formalism (cm-1)
+
+
+    DJ       0.139203E-05
+    DK       0.854544E-04
+    DJK      0.111056E-04
+    R5      -0.306055E-05
+    R6      -0.217396E-07
+    dJ       0.277444E-06
+
+
+ VPT2 State-dependent vibrationally averaged rotational constants (in cm-1) 
+
+   Ref.               4.90886     1.02148     0.84553
+
+   |000000000000>     4.72439     1.02360     0.83920
+   |000000000001>     4.70468     1.02097     0.83712
+   |000000000002>     4.68498     1.01835     0.83504
+   |000000000010>     4.70399     1.02109     0.83744
+   |000000000011>     4.68429     1.01847     0.83536
+   |000000000020>     4.68359     1.01859     0.83568
+   |000000000100>     4.68598     1.02190     0.83694
+   |000000000101>     4.66628     1.01928     0.83486
+   |000000000110>     4.66558     1.01940     0.83518
+   |000000000200>     4.64757     1.02021     0.83468
+   |000000001000>     4.69276     1.02220     0.83719
+   |000000001001>     4.67306     1.01957     0.83510
+   |000000001010>     4.67237     1.01969     0.83542
+   |000000001100>     4.65436     1.02050     0.83492
+   |000000002000>     4.66114     1.02080     0.83517
+   |000000010000>     4.71591     1.02009     0.83410
+   |000000010001>     4.69621     1.01746     0.83202
+   |000000010010>     4.69551     1.01758     0.83233
+   |000000010100>     4.67750     1.01839     0.83183
+   |000000011000>     4.68429     1.01869     0.83208
+   |000000020000>     4.70743     1.01658     0.82899
+   |000000100000>     4.75256     1.03358     0.83855
+   |000000100001>     4.73286     1.03095     0.83647
+   |000000100010>     4.73216     1.03107     0.83679
+   |000000100100>     4.71415     1.03189     0.83629
+   |000000101000>     4.72094     1.03218     0.83653
+   |000000110000>     4.74408     1.03007     0.83344
+   |000000200000>     4.78074     1.04356     0.83789
+   |000001000000>     4.71680     1.02840     0.84017
+   |000001000001>     4.69710     1.02577     0.83809
+   |000001000010>     4.69640     1.02589     0.83841
+   |000001000100>     4.67839     1.02670     0.83791
+   |000001001000>     4.68517     1.02700     0.83816
+   |000001010000>     4.70832     1.02489     0.83507
+   |000001100000>     4.74497     1.03838     0.83952
+   |000002000000>     4.70921     1.03320     0.84115
+   |000010000000>     4.84353     1.02803     0.83577
+   |000010000001>     4.82383     1.02541     0.83369
+   |000010000010>     4.82313     1.02553     0.83401
+   |000010000100>     4.80512     1.02634     0.83351
+   |000010001000>     4.81191     1.02663     0.83375
+   |000010010000>     4.83505     1.02452     0.83067
+   |000010100000>     4.87170     1.03802     0.83512
+   |000011000000>     4.83594     1.03283     0.83674
+   |000020000000>     4.96267     1.03247     0.83234
+   |000100000000>     4.60290     1.03843     0.83975
+   |000100000001>     4.58320     1.03581     0.83767
+   |000100000010>     4.58250     1.03593     0.83799
+   |000100000100>     4.56449     1.03674     0.83749
+   |000100001000>     4.57128     1.03703     0.83774
+   |000100010000>     4.59442     1.03492     0.83465
+   |000100100000>     4.63108     1.04841     0.83910
+   |000101000000>     4.59531     1.04323     0.84072
+   |000110000000>     4.72204     1.04287     0.83632
+   |000200000000>     4.48141     1.05326     0.84030
+   |001000000000>     4.55030     1.01968     0.84046
+   |001000000001>     4.53060     1.01705     0.83838
+   |001000000010>     4.52990     1.01718     0.83870
+   |001000000100>     4.51189     1.01799     0.83820
+   |001000001000>     4.51868     1.01828     0.83844
+   |001000010000>     4.54182     1.01617     0.83535
+   |001000100000>     4.57848     1.02966     0.83981
+   |001001000000>     4.54271     1.02448     0.84143
+   |001010000000>     4.66944     1.02412     0.83703
+   |001100000000>     4.42881     1.03451     0.84101
+   |002000000000>     4.37622     1.01576     0.84172
+   |010000000000>     4.86410     1.01999     0.84120
+   |010000000001>     4.84440     1.01737     0.83912
+   |010000000010>     4.84371     1.01749     0.83944
+   |010000000100>     4.82570     1.01830     0.83894
+   |010000001000>     4.83248     1.01859     0.83918
+   |010000010000>     4.85563     1.01648     0.83609
+   |010000100000>     4.89228     1.02997     0.84055
+   |010001000000>     4.85652     1.02479     0.84217
+   |010010000000>     4.98325     1.02443     0.83777
+   |010100000000>     4.74262     1.03483     0.84175
+   |011000000000>     4.69002     1.01607     0.84246
+   |020000000000>     5.00382     1.01639     0.84320
+   |100000000000>     4.49016     1.01304     0.83908
+   |100000000001>     4.47046     1.01042     0.83700
+   |100000000010>     4.46976     1.01054     0.83732
+   |100000000100>     4.45175     1.01135     0.83682
+   |100000001000>     4.45854     1.01164     0.83707
+   |100000010000>     4.48168     1.00953     0.83398
+   |100000100000>     4.51833     1.02302     0.83843
+   |100001000000>     4.48257     1.01784     0.84005
+   |100010000000>     4.60930     1.01748     0.83565
+   |100100000000>     4.36867     1.02787     0.83963
+   |101000000000>     4.31607     1.00912     0.84034
+   |110000000000>     4.62988     1.00944     0.84108
+   |200000000000>     4.25593     1.00249     0.83896
+
+
+ VPT2 zero-point vibrational energy (in cm^-1)
+
+ Harmonic:       11207.39264
+ Anharmonic:      -207.81686
+ Kinetic:            3.24631
+ Total:          11002.82209
+
+ Results of VPT2 calculation (Frequencies in cm-1)
+
+
+ Fundamentals
+
+       Mode           Harmonic    Anharmonic     Intensity
+      11^1 B3g         3215.13       3111.31          0.00
+      12^1 B2u         3239.96       3110.50         13.18
+      10^1 Ag          3152.93       3015.21          0.00
+       9^1 B1u         3136.56       2485.27         15.92
+       8^1 Ag          1702.36       1562.89          0.00
+       7^1 B1u         1442.87       1369.88          0.19
+       6^1 Ag          1362.85       1313.74          0.00
+       5^1 B3g         1202.30       1255.76          0.00
+       4^1 Au          1104.44        983.18          0.00
+       3^1 B2g         1027.90        869.23          0.00
+       2^1 B3u         1019.56        853.26         97.87
+       1^1 B2u          807.91        845.50          3.75
+
+
+ Overtones
+
+       Mode           Harmonic    Anharmonic     Intensity
+       8^2 Ag          3404.71       3248.11          0.00
+       7^2 Ag          2885.73       2728.08          0.00
+       6^2 Ag          2725.71       2660.62          0.00
+       5^2 Ag          2404.60       2536.24          0.00
+       4^2 Ag          2208.89       1954.67          0.00
+       1^2 Ag          1615.83       1785.65          0.00
+       3^2 Ag          2055.80       1730.49          0.00
+       2^2 Ag          2039.13       1683.31          0.00
+
+
+ Combination bands
+
+       Mode           Harmonic    Anharmonic     Intensity
+  8^1 11^1 B3g         4917.49       4748.82          0.00
+  8^1 12^1 B2u         4942.32       4745.99          0.90
+  8^1 10^1 Ag          4855.29       4639.91          0.00
+  7^1 12^1 B3g         4682.83       4482.68          0.00
+  7^1 11^1 B2u         4658.00       4469.67          2.17
+  6^1 12^1 B2u         4602.82       4441.02          0.25
+  6^1 11^1 B3g         4577.99       4429.43          0.00
+  5^1 11^1 Ag          4417.43       4373.81          0.00
+  5^1 12^1 B1u         4442.26       4370.53          0.66
+  7^1 10^1 B1u         4595.80       4357.40          0.42
+  6^1 10^1 Ag          4515.79       4335.89          0.00
+  5^1 10^1 B3g         4355.23       4255.27          0.00
+  4^1 12^1 B2g         4344.40       4080.69          0.00
+  4^1 11^1 B3u         4319.58       4069.60          0.01
+  1^1 12^1 Ag          4047.87       3974.19          0.00
+  4^1 10^1 Au          4257.38       3969.79          0.00
+  3^1 12^1 Au          4267.86       3962.74          0.00
+  1^1 11^1 B1u         4023.05       3960.22          0.03
+  3^1 11^1 B1g         4243.03       3951.81          0.00
+  2^1 12^1 B1g         4259.52       3948.29          0.00
+  2^1 11^1 Au          4234.69       3936.42          0.00
+  3^1 10^1 B2g         4180.83       3854.33          0.00
+  1^1 10^1 B2u         3960.85       3846.89          0.01
+  2^1 10^1 B3u         4172.49       3839.49          0.00
+  6^1  9^1 B1u         4499.42       3835.89          0.01
+  5^1  9^1 B2u         4338.86       3752.27          1.11
+  8^1  9^1 B1u         4838.92       3628.57          0.60
+  7^1  8^1 B1u         3145.22       3484.07        464.84
+  4^1  9^1 B1g         4241.01       3465.54          0.00
+  7^1  9^1 Ag          4579.43       3372.32          0.00
+  3^1  9^1 B3u         4164.46       3351.45          0.01
+  1^1  9^1 B3g         3944.48       3343.32          0.00
+  2^1  9^1 B2g         4156.12       3335.69          0.00
+  6^1  8^1 Ag          3065.21       2932.52          0.00
+  5^1  8^1 B3g         2904.65       2853.10          0.00
+  6^1  7^1 B1u         2805.72       2691.83          1.31
+  5^1  7^1 B2u         2645.17       2629.10          0.03
+  5^1  6^1 B3g         2565.15       2601.75          0.00
+  4^1  8^1 Au          2806.80       2597.67          0.00
+  3^1  8^1 B2g         2730.26       2482.06          0.00
+  2^1  8^1 B3u         2721.92       2465.41          0.00
+  1^1  8^1 B2u         2510.27       2461.17          0.21
+  4^1  7^1 B1g         2547.31       2341.58          0.00
+  4^1  6^1 Au          2467.30       2304.00          0.00
+  4^1  5^1 B3u         2306.74       2236.32          0.45
+  1^1  7^1 B3g         2250.78       2216.72          0.00
+  3^1  7^1 B3u         2470.77       2202.06          0.05
+  1^1  6^1 B2u         2170.77       2192.66          0.50
+  3^1  6^1 B2g         2390.76       2182.00          0.00
+  2^1  7^1 B2g         2462.43       2181.55          0.00
+  2^1  6^1 B3u         2382.42       2158.74          0.10
+  1^1  5^1 B1u         2010.21       2154.89          7.09
+  3^1  5^1 B1g         2230.20       2125.94          0.00
+  2^1  5^1 Au          2221.86       2102.61          0.00
+  1^1  4^1 B2g         1912.36       1809.77          0.00
+  3^1  4^1 B2u         2132.35       1805.27          0.73
+  2^1  4^1 B3g         2124.01       1792.85          0.00
+  1^1  3^1 Au          1835.82       1686.17          0.00
+  1^1  2^1 B1g         1827.48       1673.24          0.00
+  2^1  3^1 B1u         2047.46       1671.62          6.34
+
+ CPU-Time for VPT2 calculation:          0.0 sec.
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22       48.67       500      610      700      708      900      950      970     1007      129      960   
+                                          VAR    BASINP    GEOM     GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS    
+                                         1100     1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+                                         1800      703   
+                                         GRID     GEOM   
+
+              2      62      341.30       700     1000      520     1800     2100      701      702     1001     1800(1)  2101   
+                                         GEOM     BASIS   MCVARS    GRID      RKS     GEOM     GEOM     BASIS    GRID      RKS  
+                                         5300     5450     5400     2102     5600     5650      703     1002     2103      704   
+                                         HESS     NMOD     FREQ      RKS     SURF    DIPOLE    GEOM     BASIS     RKS     GEOM   
+                                         1003     2104      705     1004     2105      706     1005     2106      707     1006   
+                                         BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS   
+                                         2107      708     1007     2108      709     1008     2109      710     1009     2110   
+                                          RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS  
+                                          711     1010     2111      712     1011     2112      713     1012     2113      714   
+                                         GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM     BASIS     RKS     GEOM   
+                                         1013     2114      715     1014     2115     5650(1)   716     1015     2116     5550   
+                                         BASIS     RKS     GEOM     BASIS     RKS    DIPOLE    GEOM     BASIS     RKS    VIBINFO    
+                                         5750     5770   
+                                         POLY      MU  
+
+ PROGRAMS   *        TOTAL      VPT2      POLY    KS-SCF       INT    KS-SCF       INT    KS-SCF       INT    KS-SCF       INT
+ CPU TIMES  *      2792.83      0.02      5.74      7.13      2.08      3.19      3.02      7.15      2.02      7.22      2.01
+ REAL TIME  *      2909.43 SEC
+ DISK USED  *       488.94 MB
+ **********************************************************************************************************************************
+
+ VPT2/DEF2-TZVP energy=      0.000000000000
+
+            VPT2            POLY          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF
+    -78.54626926    -78.54626926    -78.54626926    -78.54616031    -78.54595713    -78.54568602    -78.54563134    -78.54548262
+ **********************************************************************************************************************************
+ Molpro calculation terminated

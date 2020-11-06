@@ -1,0 +1,31 @@
+***,    Geom opt + VPT2 for phosphorous trifluoride
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+4
+
+P         -0.53161        2.14075       -0.22716
+F          1.00710        1.97419        0.06484
+F         -0.88604        2.64957        1.22063
+F         -0.88604        0.63556        0.07185
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+surf,start1D=label1,type=qff,sym=auto
+poly,type=qff
+vpt2,combi=1
+---
+

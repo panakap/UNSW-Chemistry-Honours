@@ -1,0 +1,31 @@
+***,    Geom opt + VPT2 for ammonia
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+4
+
+N         -0.31060        1.49398        0.00912
+H          0.70673        1.43731       -0.00479
+H         -0.62220        0.78704        0.67357
+H         -0.62220        1.17497       -0.90712
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+surf,start1D=label1,type=qff,sym=auto
+poly,type=qff
+vpt2,combi=1
+---
+

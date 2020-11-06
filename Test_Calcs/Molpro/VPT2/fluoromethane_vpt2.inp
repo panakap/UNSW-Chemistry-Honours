@@ -1,0 +1,32 @@
+***,    Geom opt + VPT2 for fluoromethane
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+5
+
+C         -0.48347        1.09831       -0.05476
+H          0.60830        1.10236       -0.04160
+F         -0.93570        1.47471        1.16770
+H         -0.85389        0.09448       -0.27218
+H         -0.85389        1.80599       -0.79916
+}
+mass,iso
+
+ks,M06
+optg
+
+frequencies,symm=auto
+
+label1
+{ks,M06
+start,atden}
+
+surf,start1D=label1,type=qff,sym=auto
+poly,type=qff
+vpt2,combi=1
+---
+

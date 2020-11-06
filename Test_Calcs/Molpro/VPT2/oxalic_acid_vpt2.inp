@@ -1,0 +1,32 @@
+***,	MOLPRO Geometry optimization + VPT2 calculation for oxalic acid
+
+memory,40,m
+basis=def2-TZVP
+
+orient,mass
+geomtyp=xyz
+geometry={
+8
+
+C	-0.36575	 1.61272	-0.07713
+C	 1.17028	 1.56854	-0.11321
+O	-0.95865	 2.67432	-0.14702
+O	-0.90394	 0.38884	 0.03139
+H	-0.18704	-0.28787	 0.06730
+O	 1.70801	 2.79078	-0.24018
+O	 1.76348	 0.50763	-0.03371
+H	 0.99096	 3.46700	-0.28191
+}
+mass,iso
+	
+ks,M06
+optg
+frequencies
+
+label1
+ks,M06
+
+surf,start1D=label1,type=qff
+poly,type=qff
+vpt2,combi=1
+---
