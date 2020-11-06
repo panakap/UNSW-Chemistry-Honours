@@ -1,0 +1,24 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# B2PLYP/cc-pVTZ Freq Opt=(VeryTight,ZMatrix,CalcAll) Int=UltraFine
+
+CFC-13 - CClF3 HARMONIC FREQUENCIES
+
+0  1
+C
+F  1  r2
+F  1  r3  2  a3
+F  1  r4  2  a4  3  d4
+Cl  1  r5  2  a5  3  d5
+Variables:
+r2= 1.3524
+r3= 1.3524
+a3= 107.80
+r4= 1.3524
+a4= 107.80
+d4= 243.88
+r5= 1.7547
+a5= 111.10
+d5= 121.94
+
+

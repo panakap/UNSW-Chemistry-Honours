@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -P on41
+#PBS -q normal
+#PBS -l walltime=48:00:00
+#PBS -l mem=16GB
+#PBS -l jobfs=16GB
+#PBS -l ncpus=4
+#PBS -l software=g16
+#PBS -l wd
+#PBS -M p.kapodistrias@unsw.edu.au
+
+module load gaussian
+
+g16 CFC-14.gjf
