@@ -1,0 +1,15 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for phosphorous trifluoride using VPT2
+
+0 1
+P         -0.53161        2.14075       -0.22716
+F          1.00710        1.97419        0.06484
+F         -0.88604        2.64957        1.22063
+F         -0.88604        0.63556        0.07185
+
+PT2Model=GVPT2
+
+

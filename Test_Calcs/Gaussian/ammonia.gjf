@@ -1,0 +1,15 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for ammonia using VPT2
+
+0 1
+N         -0.31060        1.49398        0.00912
+H          0.70673        1.43731       -0.00479
+H         -0.62220        0.78704        0.67357
+H         -0.62220        1.17497       -0.90712
+
+PT2Model=GVPT2
+
+

@@ -1,0 +1,17 @@
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for oxalic acid using VPT2
+
+0 1
+C       -0.36575         1.61272        -0.07713
+C        1.17028         1.56854        -0.11321
+O       -0.95865         2.67432        -0.14702
+O       -0.90394         0.38884         0.03139
+H       -0.18704        -0.28787         0.06730
+O        1.70801         2.79078        -0.24018
+O        1.76348         0.50763        -0.03371
+H        0.99096         3.46700        -0.28191
+
+PT2Model=GVPT2
+
+

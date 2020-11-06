@@ -1,0 +1,12 @@
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for H2O using VPT2
+
+0 1
+O	-0.23995	1.15171		-0.00379
+H	 0.72794	1.19730		 0.00502
+H	-0.51880	2.06288		 0.17219
+
+PT2Model=GVPT2
+
+

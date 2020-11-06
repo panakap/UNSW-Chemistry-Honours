@@ -1,0 +1,15 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for phosphine using VPT2
+
+0 1
+P         -0.06619        1.22605       -0.15895
+H          1.31493        1.03098        0.07917
+H         -0.38145        1.45450        1.20144
+H         -0.38145       -0.15269       -0.11518
+
+PT2Model=GVPT2
+
+

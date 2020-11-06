@@ -1,0 +1,15 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for methanal using VPT2
+
+0 1
+C         -0.09593        1.46711       -0.00063
+O         -0.50414        2.58940        0.27058
+H         -0.54473        0.85573       -0.79970
+H          0.74465        1.00141        0.53817
+
+PT2Model=GVPT2
+
+

@@ -1,0 +1,14 @@
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for trichlorofluoromethane using VPT2
+
+0 1
+C       -0.35973         1.37679        -0.04814
+Cl       1.41506         1.39227        -0.06459
+F       -0.81285         2.25577        -0.98236
+Cl      -0.96181         1.87642         1.54494
+Cl      -0.96181        -0.24375        -0.44985
+
+PT2Model=GVPT2
+
+

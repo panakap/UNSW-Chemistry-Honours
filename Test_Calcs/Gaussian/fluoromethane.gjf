@@ -1,0 +1,16 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for fluoromethane using VPT2
+
+0 1
+C         -0.48347        1.09831       -0.05476
+H          0.60830        1.10236       -0.04160
+F         -0.93570        1.47471        1.16770
+H         -0.85389        0.09448       -0.27218
+H         -0.85389        1.80599       -0.79916
+
+PT2Model=GVPT2
+
+

@@ -1,0 +1,19 @@
+%NprocShared=4
+%chk=checkpoint.chk
+# M06/Def2TZVP Freq=(anharmonic,ReadAnharm) Opt=CalcAll
+
+Anharmonic frequencies for fluoroethane using VPT2
+
+0 1
+C         -0.62537        0.99175        0.00029
+C          0.88400        0.94396        0.00067
+H         -0.98946        1.53944        0.87496
+H         -1.04924       -0.01610        0.01212
+H         -0.98967        1.51884       -0.88687
+H          1.26465        0.44783        0.89750
+F          1.36227        2.21604       -0.01426
+H          1.26444        0.42699       -0.88440
+
+PT2Model=GVPT2
+
+
