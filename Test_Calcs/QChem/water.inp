@@ -1,0 +1,32 @@
+$comment
+	QCHEM - Water
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+O	 0.17795	1.34789		 0.02109	
+H	 1.16728	1.37117		-0.01489
+H	-0.11141	1.86226		-0.77408
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	wB97XD
+	BASIS	def2-TZVP
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	wB97XD
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	VCI	4
+$end

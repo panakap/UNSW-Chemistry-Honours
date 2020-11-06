@@ -1,0 +1,38 @@
+$comment
+	QCHEM - ethene
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+C         -0.60396        1.82801        0.00000
+C          0.73176        1.84069        0.00000
+H         -1.17088        2.56631        0.55840
+H         -1.15677        1.07908       -0.55840
+H          1.28457        2.58962        0.55840
+H          1.29868        1.10239       -0.55840
+
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+	SCF_CONVERGENCE	7
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	SCF_CONVERGENCE	7
+	VCI	4
+$end

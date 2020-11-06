@@ -1,0 +1,40 @@
+$comment
+	QCHEM - Fluoroethane
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+C         -0.62537        0.99175        0.00029
+C          0.88400        0.94396        0.00067
+H         -0.98946        1.53944        0.87496
+H         -1.04924       -0.01610        0.01212
+H         -0.98967        1.51884       -0.88687
+H          1.26465        0.44783        0.89750
+F          1.36227        2.21604       -0.01426
+H          1.26444        0.42699       -0.88440
+
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+	SCF_CONVERGENCE	7
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	SCF_CONVERGENCE	7
+	VCI	4
+$end

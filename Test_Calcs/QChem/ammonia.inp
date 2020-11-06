@@ -1,0 +1,36 @@
+$comment
+	QCHEM - Ammonia
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+N         -0.31060        1.49398        0.00912
+H          0.70673        1.43731       -0.00479
+H         -0.62220        0.78704        0.67357
+H         -0.62220        1.17497       -0.90712
+
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+	SCF_CONVERGENCE	7
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	SCF_CONVERGENCE	7
+	VCI	4
+$end

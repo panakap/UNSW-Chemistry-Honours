@@ -1,0 +1,32 @@
+$comment
+	geom opt + anharmonic freq analysis for CCl3F
+$end
+
+$molecule
+0 1
+C	-1.2505130	 0.3116482	-0.8882340
+Cl	-2.9483449	-0.1358539	-1.1681284
+Cl	-1.1573913	 2.0274760	-0.4316209
+Cl	-0.5825504	-0.6874316	 0.4220705
+F	-0.5226464	 0.1024401	-2.0436727
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	VCI	4
+$end

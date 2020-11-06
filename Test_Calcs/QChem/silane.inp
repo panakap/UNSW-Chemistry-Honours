@@ -1,0 +1,37 @@
+$comment
+	QCHEM - Silane
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+Si         0.00646        1.04427       -0.00000
+H          1.49146        1.04427        0.00000
+H         -0.48854        0.03020       -0.96533
+H         -0.48854        2.38730       -0.39554
+H         -0.48854        0.71530        1.36087
+
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+	SCF_CONVERGENCE	7
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	SCF_CONVERGENCE	7
+	VCI	4
+$end

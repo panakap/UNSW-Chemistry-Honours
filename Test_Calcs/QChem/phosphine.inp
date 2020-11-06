@@ -1,0 +1,36 @@
+$comment
+	QCHEM - Phosphine
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+P         -0.06619        1.22605       -0.15895
+H          1.31493        1.03098        0.07917
+H         -0.38145        1.45450        1.20144
+H         -0.38145       -0.15269       -0.11518
+
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+	SCF_CONVERGENCE	7
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	SCF_CONVERGENCE	7
+	VCI	4
+$end

@@ -1,0 +1,36 @@
+$comment
+	QCHEM - Methanal
+	Geometry optimization
+	Anharmonic frequency analysis
+$end
+
+$molecule
+0 1
+C         -0.09593        1.46711       -0.00063
+O         -0.50414        2.58940        0.27058
+H         -0.54473        0.85573       -0.79970
+H          0.74465        1.00141        0.53817
+
+$end
+
+$rem
+	JOBTYPE	OPT
+	METHOD	M06
+	BASIS	def2-TZVP
+	SCF_CONVERGENCE	7
+$end
+
+@@@
+
+$molecule
+	READ
+$end
+
+$rem
+	JOBTYPE	FREQ
+	METHOD	M06
+	BASIS	def2-TZVP
+	ANHAR	TRUE
+	SCF_CONVERGENCE	7
+	VCI	4
+$end

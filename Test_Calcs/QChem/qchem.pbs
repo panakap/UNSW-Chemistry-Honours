@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -P on41
+#PBS -q normal
+#PBS -l walltime=48:00:00
+#PBS -l mem=16GB
+#PBS -l jobfs=16GB
+#PBS -l ncpus=4
+#PBS -l software=qchem
+#PBS -l wd
+
+module load qchem
+
+qchem -nt 4 ammonia.inp ammonia_qchem.out
+qchem -nt 4 ethene.inp ethene_qchem.out
+qchem -nt 4 methanal.inp methanal_qchem.out
+qchem -nt 4 phosphine.inp phosphine_qchem.out
+qchem -nt 4 fluoromethane.inp fluoromethane_qchem.out
+qchem -nt 4 fluoroethane.inp fluoroethane_qchem.out
+qchem -nt 4 silane.inp silane_qchem.out
+qchem -nt 4 1,2-difluoroethane.inp 1,2-difluoroethane_qchem.out
+qchem -nt 4 phosphorous_trifluoride.inp phosphorous_trifluoride_qchem.out
